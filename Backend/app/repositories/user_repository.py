@@ -10,6 +10,20 @@ def insert_user(user):
     mysql.connection.commit()
     cur.close()
 
+def find_user_by_email(email):
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT * FROM users WHERE email = %s", (email,))
+    user = cur.fetchone()
+    cur.close()
+    return user
+
+
+def find_user_by_phone(phone):
+    cur = mysql.connection.cursor()
+    cur.execute("SELECT * FROM users WHERE phone = %s", (phone,))
+    user = cur.fetchone()
+    cur.close()
+    return user
 
 
 
