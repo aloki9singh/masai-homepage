@@ -1,7 +1,5 @@
 <script>
-    import { Button, Navbar,NavBrand,NavHamburger,NavLi,NavUl } from "flowbite-svelte";
-
-
+  import { Button, Navbar,NavBrand,NavHamburger,NavLi,NavUl } from "flowbite-svelte";
 </script>
 
 <Navbar class="sticky">

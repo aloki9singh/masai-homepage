@@ -2,7 +2,7 @@
   import { Button, CloseButton, Drawer, Input, Label } from "flowbite-svelte";
   import { sineIn } from "svelte/easing";
 
-  let hidden6 = false;
+  let hidden6 =true;
   let transitionParamsRight = {
     x: 320,
     duration: 200,
