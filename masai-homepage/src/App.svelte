@@ -9,9 +9,9 @@
   import CareerTech from "./lib/CareerTech.svelte";
   import Verify from "./lib/Verify.svelte";
   // Library Import
-  import { Toast } from 'flowbite-svelte';
-  import { CheckCircleSolid,CloseCircleSolid } from 'flowbite-svelte-icons';
+  
   // State Management
+  // Drawer Management
   let drawerId = {
     hiddenSignUp: true,
     hiddenVerify: true,
@@ -34,24 +34,19 @@
       hiddenVerify: true,
     };
   };
+  // Auth Management
+  let user=null;
+  const handleLogin=(event)=>{
+    console.log(event.detail)
+    user=event.detail;
+  }
+  const handleLogOut=()=>{
+    user=null;
+  }
 </script>
-<!-- <Toast color="green" open={true} position='bottom-right' >
-  <svelte:fragment slot="icon">
-    <CheckCircleSolid class="w-5 h-5" />
-    <span class="sr-only">Check icon</span>
-  </svelte:fragment>
-  Item moved successfully.
-</Toast>
-<Toast color="red" open={false} position='bottom-right'>
-  <svelte:fragment slot="icon" >
-    <CloseCircleSolid class="w-5 h-5" />
-    <span class="sr-only">Error icon</span>
-  </svelte:fragment>
-  Item has been deleted.
-</Toast> -->
 
 <main>
-  <NavBar on:openSignUp={handleOpenSignUp} />
+  <!-- <NavBar on:openSignUp={handleOpenSignUp} user={user} on:LogOutUser={handleLogOut}/>
   <SignUp
     hidden6={drawerId.hiddenSignUp}
     on:openSignIn={handleOpenSignIn}
@@ -63,10 +58,10 @@
     on:openVerify={handleOpenVerify}
     on:closeSignIn={handleCloseVerify}
   />
-  <Verify hidden6={drawerId.hiddenVerify} on:closeVerify={handleCloseVerify} />
+  <Verify hidden6={drawerId.hiddenVerify} on:closeVerify={handleCloseVerify} on:LogInUser={handleLogin}/> -->
   <Banner />
-  <CareerTech />
-  <Courses />
+  <!-- <CareerTech />
+  <Courses /> -->
 </main>
 
 <style>

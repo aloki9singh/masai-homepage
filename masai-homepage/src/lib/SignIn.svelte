@@ -14,19 +14,19 @@
     }
     const handleSubmit=async (event)=>{
         event.preventDefault();
-        const res=await fetch('',{
-            method:'POST',
-            body:JSON.stringify(formData),
-            headers:{
-                'Content-Type':'application/json'
-            }
-        })
-        const data=await res.json();
-        if(data.ok){
-         dispatch('openVerify');
-        }else{
+        // const res=await fetch('',{
+        //     method:'POST',
+        //     body:JSON.stringify(formData),
+        //     headers:{
+        //         'Content-Type':'application/json'
+        //     }
+        // })
+        // const data=await res.json();
+        // if(data.ok){
+        // }else{
             
-        }
+        // }
+        dispatch('openVerify');
     }
 </script>
 
