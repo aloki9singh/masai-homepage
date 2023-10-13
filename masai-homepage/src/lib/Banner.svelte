@@ -3,6 +3,9 @@
 </script>
 
 <div>
+  <div class="w-full h-36">
+
+  </div>
   <div class="w-full">
     <img
       src="https://masai-website-images.s3.ap-south-1.amazonaws.com/banner_h_1_3d43d26bd0.webp"
@@ -15,7 +18,7 @@
         <p class="py-2">Realise Your Potential</p>
         <p>
           With
-          <span class="text-[#ed0331] relative">
+          <span class="text-[#ed0331] relative z-[-1]">
             Assured Outcomes
             <img
               alt="yellow-vector"

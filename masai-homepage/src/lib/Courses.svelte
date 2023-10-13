@@ -3,11 +3,11 @@
   import { CheckCircleSolid } from "flowbite-svelte-icons";
 </script>
 
-<div>
+<div class='mt-20'>
   <h1 class="text-5xl font-[700] text-center pb-5">Our Courses</h1>
   <p class="text-3xl font-[700] text-center">
     Practice-Based Learning Tracks,
-    <span class="text-[#ed0331] relative">
+    <span class="text-[#ed0331] relative z-[-1]">
       Supercharged By A.I.
       <img
         alt="yellow-vector"
