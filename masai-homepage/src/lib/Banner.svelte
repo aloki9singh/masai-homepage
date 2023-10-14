@@ -43,8 +43,8 @@
     <div class="w-4/12  mx-auto p-4 ">
       <Carousel />
     </div>
-    <div class="w-4/12 top-72 right-72 absolute h-[200px]">
-
+    <div class="w-4/12 top-72 right-80 absolute h-[200px]">
+      <TextCarousel/>
     </div>
   </div>
 </div>
