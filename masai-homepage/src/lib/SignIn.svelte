@@ -14,19 +14,23 @@
     }
     const handleSubmit=async (event)=>{
         event.preventDefault();
-        // const res=await fetch('',{
-        //     method:'POST',
-        //     body:JSON.stringify(formData),
-        //     headers:{
-        //         'Content-Type':'application/json'
-        //     }
-        // })
-        // const data=await res.json();
-        // if(data.ok){
-        // }else{
-            
-        // }
-        dispatch('openVerify');
+        fetch('http://localhost:5000/login', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email:formData.credential, phone: formData.credential })
+            })
+                .then(response => response.json())
+                .then(data => {
+                    localStorage.setItem('user',data.message)
+                    dispatch('openVerify');
+                })
+                .catch(error => {
+                    error.json().then(errorMessage => {
+                        alert(errorMessage.error)
+                    });
+                });
     }
 </script>
 

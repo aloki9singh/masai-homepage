@@ -15,27 +15,34 @@
     phone: "",
     referalCode: "",
   };
-  const handleSubmit = async (event) => {
+  const handleSubmit = (event) => {
     event.preventDefault();
-    const res = await fetch("", {
+    fetch("http://localhost:5000/signup", {
       method: "POST",
-      body: JSON.stringify(formData),
       headers: {
         "Content-Type": "application/json",
       },
-    });
-    const data = await res.json();
-    if (data.ok) {
-      formData = {
-      ...formData,
-      username: "",
-      emai: "",
-      phone: "",
-      referalCode: "",
-    };
-      dispatch("openVerify");
-    } else {
-    }
+      body: JSON.stringify({
+        full_name: formData.username,
+        email: formData.email,
+        phone: formData.phone
+      }),
+    })
+      .then((response) => {
+        if (response.ok) {
+          return response.json();
+        } else {
+          return response.json().then((data) => {
+            throw new Error(data.error);
+          });
+        }
+      })
+      .then((data) => {
+        alert(data?.message)
+      })
+      .catch((error) => {
+       alert(error?.message)
+      });
   };
 </script>
 

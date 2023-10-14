@@ -19,7 +19,7 @@
     };
     const handleSubmit = (event) => {
         event.preventDefault();
-        dispatch('LogInUser',{ name: "ajaya kumar" });
+        dispatch('LogInUser',JSON.parse(localStorage.getItem('user')));
         dispatch("closeVerify");
     };
 </script>

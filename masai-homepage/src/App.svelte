@@ -8,6 +8,7 @@
   import Courses from "./lib/Courses.svelte";
   import CareerTech from "./lib/CareerTech.svelte";
   import Verify from "./lib/Verify.svelte";
+    import Pedagogy from "./lib/Pedagogy.svelte";
   // Library Import
   
   // State Management
@@ -46,7 +47,7 @@
 </script>
 
 <main>
-  <!-- <NavBar on:openSignUp={handleOpenSignUp} user={user} on:LogOutUser={handleLogOut}/>
+  <NavBar on:openSignUp={handleOpenSignUp} user={user} on:LogOutUser={handleLogOut}/>
   <SignUp
     hidden6={drawerId.hiddenSignUp}
     on:openSignIn={handleOpenSignIn}
@@ -58,10 +59,11 @@
     on:openVerify={handleOpenVerify}
     on:closeSignIn={handleCloseVerify}
   />
-  <Verify hidden6={drawerId.hiddenVerify} on:closeVerify={handleCloseVerify} on:LogInUser={handleLogin}/> -->
+  <Verify hidden6={drawerId.hiddenVerify} on:closeVerify={handleCloseVerify} on:LogInUser={handleLogin}/>
   <Banner />
-  <!-- <CareerTech />
-  <Courses /> -->
+  <CareerTech />
+  <Courses />
+  <Pedagogy/>
 </main>
 
 <style>

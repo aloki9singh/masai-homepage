@@ -32,5 +32,5 @@
         alt={`Slide ${1}`}
        class="w-full h-full object-fit bg-[#d6e2fa] rounded-2xl"
     />
-    <span class="m-auto border-[4px] border-solid border-[#9ec4d0] rounded-2xl h-full w-full absolute rotate-[-12deg] z-[-2]"></span>
+    <span class="m-auto border-[2px] border-solid border-blue-500 rounded-2xl h-full w-full absolute rotate-[-12deg] z-[-2]"></span>
 </div>
