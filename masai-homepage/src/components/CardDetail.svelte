@@ -1,16 +1,22 @@
 <script>
-    import { Card } from 'flowbite-svelte';
-    import { GiftBoxSolid, ArrowUpRightFromSquareOutline } from 'flowbite-svelte-icons';
+    import { Avatar, Card } from 'flowbite-svelte';
+    import { GiftBoxSolid, ArrowUpRightFromSquareOutline, LinkedinSolid } from 'flowbite-svelte-icons';
+    export let detail;
   </script>
   
-  <Card>
-    <GiftBoxSolid class="w-7 h-7 mb-3 text-gray-500 dark:text-gray-400" />
-    <a href="/">
-      <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in Claim?</h5>
-    </a>
-    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process on how to certify for your weekly benefits:</p>
-    <a href="/" class="inline-flex items-center text-primary-600 hover:underline">
-      See our guideline
-      <ArrowUpRightFromSquareOutline class="w-3 h-3 ml-2.5" />
-    </a>
+  <Card class="md:w-[400px]  rounded-[30px]" >
+    <div class="w-full flex justify-end ">
+      <LinkedinSolid class="w-7 h-7 mb-3 text-white text-right bg-blue-700 rounded p-1"/>
+    </div>
+    <p class="mb-3 font-normal text-gray-500 dark:text-gray-400 line-clamp-2 pt-5">"{detail.statement}</p>
+    <div class="flex gap-5 py-5">
+        <Avatar src={detail.img1} rounded />
+        <div>
+            <h2 class="text-black text-sm">{detail.name}</h2>
+            <p class="text-[12px]">{detail.designation}</p>
+        </div>
+    </div>
+   <div class="">
+    <img src={detail.img2} class="h-7" alt="">
+   </div>
   </Card>

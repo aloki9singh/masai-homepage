@@ -1,4 +1,4 @@
-<div class="grid md:grid-cols-2">
+<div class="grid md:grid-cols-2 py-5 md:py-10">
     <div>
         
 

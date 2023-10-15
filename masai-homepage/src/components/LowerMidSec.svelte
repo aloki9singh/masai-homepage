@@ -6,6 +6,7 @@
   import Certificate from "./Certificate.svelte";
   import ElevateSection from "./ElevateSection.svelte";
   import Footer from "./Footer.svelte";
+  import HiringPartners from "./HiringPartners.svelte";
   import StudentsImpact from "./StudentsImpact.svelte";
   import VideoCardScroll from "./VideoCardScroll.svelte";
   let  arr={img1:"https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Article_Prateek_Shukla_Gen_AI_92324e2d6b.jpeg",
@@ -14,13 +15,13 @@
 
 </script>
 <div>
-    <!-- <VideoCardScroll/> -->
+  
     <!-- <div class="grid grid-cols-3  ">
       <Card img={arr.img1}  heading={arr.heading1}/>
       <Card img={arr.img2} heading={arr.heading2}/>
       <Card img={arr.img3} heading={arr.heading3}/>
     </div> -->
-    <!-- <HiringPartners/> -->
+    <HiringPartners/>
     <StudentsImpact/>
     <!-- --------Elevate section----------------------- -->
      <ElevateSection/>
