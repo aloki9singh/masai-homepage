@@ -33,7 +33,7 @@
         <p class="py-3">Delivered.</p>
       </div>
       <div>
-        <p class="  md:text-2xl p-0">India’s only outcome-based career institute. <span class="block md:hidden inline ">Enter the tech workforce industry-ready.</span></p>
+        <p class="  md:text-2xl p-0">India’s only outcome-based career institute. <span class="block md:hidden">Enter the tech workforce industry-ready.</span></p>
         <p class=" md:block hidden  md:text-2xl">Enter the tech workforce industry-ready.</p>
       </div>
       <div>
