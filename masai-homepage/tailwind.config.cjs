@@ -1,17 +1,39 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ['./src/**/*.{html,js,svelte,ts}', './node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'],
+  content: [
+    "./src/**/*.{html,js,svelte,ts}",
+    "./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}",
+  ],
 
-  plugins: [require('flowbite/plugin')],
+  plugins: [require("flowbite/plugin")],
 
-  darkMode: 'class',
-
+  darkMode: "class",
   theme: {
     extend: {
-     
-    }
-  }
-}
+      fontFamily: {
+        // raleway: ["Raleway", "sans-serif"],
+        // Inter: ["Inter", "sans-serif"],
+      },
+      colors: {
+        // blue: "#1E1E1E",
+        // pink: "#E1348B",
+        // bs: "#0D0E14",
+        // primary: "#E1348B",
+      },
+      screens: {
+        // sd: "300px",
+      },
+      
+      
+    },
+
+    fontFamily: {
+      // ral: ["Raleway", "sans-serif"],
+      // raleway: ["Raleway", "sans-serif"],
+      // Inter: ["Inter", "sans-serif"],
+    },
+  },
+};
 
 // colors: {
 //   primary: {
