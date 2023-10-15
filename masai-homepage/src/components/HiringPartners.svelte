@@ -33,7 +33,7 @@
 
 
 
-<div class="max-w-[1440px] mx-auto text-center pt-10">
+<div class="max-w-[1440px] mx-auto text-center">
     <p class="font-[700] text-[34px] leading-[40px] font-poppins transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 text-center mx-auto mb-[16px] capitalize">
         Meet our
         <span class="!text-[#ED0331] relative whitespace-nowrap isolate">

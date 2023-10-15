@@ -1,4 +1,6 @@
 <script>
+  import { Button } from "flowbite-svelte";
+
 </script>
 <p class="text-3xl font-[700] text-center z-[-1]">
     <span class="z-[-10]">Best-In-Class</span>
@@ -46,5 +48,13 @@
             </div>
         </div>
     </div>
-    <img src="https://www.masaischool.com/images/new-homepage/curriculum-style/course-image5.webp" class="h-[500px] w-5/12 absolute top-8 right-20 rounded-2xl z-[-2]" alt="pedagogy">
+    <div>
+        <img src="https://www.masaischool.com/images/new-homepage/curriculum-style/course-image5.webp" class="h-[500px] w-5/12 absolute top-8 right-20 rounded-2xl z-[-2]" alt="pedagogy">
+    </div>
 </div>
+
+<div> <div class="m-auto w-7/12 flex justify-center items-center p-5">
+    <Button class="bg-[#ed0331] uppercase tracking-wide p-3"
+      >GET YOUR DREAM JOB</Button
+    >
+  </div></div>

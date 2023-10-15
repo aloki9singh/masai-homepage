@@ -1,5 +1,7 @@
 
 <script>
+  import { Button } from "flowbite-svelte";
+
     let images=[
         "https://masaischool.com/images/new-homepage/community/community1.webp",
         "https://masaischool.com/images/new-homepage/community/community2.webp",
@@ -29,17 +31,21 @@
 </div>
 
 
-<div class="slider ">
+<div class="slider">
     <div class="slide-track " style="transform: translate3d(-3346.36px, 0px, 0px); transition-duration: 0ms;">
         {#each images as image (image)}
         <div class=" slide w-full !h-auto  " style="width:361.818px; margin-right:10px;">
           
-                <img alt="community" class="object-cover pointer-events-none " style="opacity: 1; transition: opacity 1200ms ease-out 0s;" src={image}>
+       <img alt="community" class="object-cover pointer-events-none " style="opacity: 1; transition: opacity 1200ms ease-out 0s;" src={image}>
            
         </div>
         {/each}
        
     </div>
+     <div class="m-auto w-7/12 flex justify-center items-center p-5">
+    <!-- <Button class="bg-[#ed0331] uppercase tracking-wide p-3"
+      >View All Courses</Button> -->
+  </div>
 </div>
 
 <style>
@@ -66,6 +72,7 @@
     } */
     img{
         width: 100%;
+        height:auto
     }
 
     @keyframes scroll {
