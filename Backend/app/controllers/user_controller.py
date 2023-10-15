@@ -11,7 +11,7 @@ CORS(app)
 
 @app.route("/")
 def home():
-    return "hello"
+    return "hellow"
 
 
 @app.route("/signup", methods=["POST"])
@@ -22,9 +22,24 @@ def signup():
         email = data.get("email")
         phone = data.get("phone")
 
-        if not (full_name and (email or phone)):
+        if not (full_name and email and phone):
             raise CustomException(
-                "Invalid request. Provide full name and either email or phone.", 400
+                "Invalid request. Provide full name and either email and phone number.",
+                400,
+            )
+
+        if email and not re.match(r"[^@]+@[^@]+\.[^@]+", email):
+            raise CustomException("Invalid email format.", 400)
+
+        if phone and not re.match(r"^\d{10}$", phone):
+            raise CustomException(
+                "Invalid phone format. Please provide a 10-digit phone number.", 400
+            )
+
+        existing_user = find_user(email, phone)
+        if existing_user:
+            raise CustomException(
+                "User already registered with this email or phone.", 400
             )
 
         create_user(full_name, email, phone)
