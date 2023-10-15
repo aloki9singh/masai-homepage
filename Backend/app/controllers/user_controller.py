@@ -22,9 +22,10 @@ def signup():
         email = data.get("email")
         phone = data.get("phone")
 
-        if not (full_name and (email or phone)):
+        if not (full_name and email and phone):
             raise CustomException(
-                "Invalid request. Provide full name and either email or phone.", 400
+                "Invalid request. Provide full name and either email and phone number.",
+                400,
             )
 
         if email and not re.match(r"[^@]+@[^@]+\.[^@]+", email):
