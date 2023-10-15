@@ -11,11 +11,13 @@
     <img
       src="https://masai-website-images.s3.ap-south-1.amazonaws.com/banner_h_1_3d43d26bd0.webp"
       alt="masai-banner"
+      class="md:block hidden"
     />
+    <img class="md:hidden w-screen " alt="" src="https://masai-website-images.s3.ap-south-1.amazonaws.com/banner_m_1_b63dd244db.webp" loading="lazy">
   </div>
-  <div class="flex p-5 justify-between items-center relative">
+  <div class="flex p-5 py-10 md:text-left text-center justify-between items-center relative md:flex-row flex-col md:text-auto ">
     <div class="flex flex-col gap-5 w-2/3 ">
-      <div class="text-5xl font-extrabold">
+      <div class="md:text-5xl lg:text-4xl text-2xl  font-extrabold">
         <p class="py-2">Realise Your Potential</p>
         <p>
           With
@@ -31,8 +33,8 @@
         <p class="py-3">Delivered.</p>
       </div>
       <div>
-        <p class="text-2xl p-0">India’s only outcome-based career institute.</p>
-        <p class="text-2xl">Enter the tech workforce industry-ready.</p>
+        <p class="  md:text-2xl p-0">India’s only outcome-based career institute. <span class="block md:hidden inline ">Enter the tech workforce industry-ready.</span></p>
+        <p class=" md:block hidden  md:text-2xl">Enter the tech workforce industry-ready.</p>
       </div>
       <div>
         <Button class="bg-[#ed0331] p-3 uppercase tracking-widest text-lg"
@@ -40,10 +42,10 @@
         >
       </div>
     </div>
-    <div class="w-4/12  mx-auto p-4 ">
+    <div class="md:w-5/12  mx-auto p-4 ">
       <Carousel />
     </div>
-    <div class="w-4/12 top-72 right-80 absolute h-[200px]">
+    <div class="w-4/12 top-72 md:block hidden right-80 absolute h-[200px]">
       <TextCarousel/>
     </div>
   </div>

@@ -116,7 +116,7 @@
           type="number"
         />
       </div>
-      <div class="mb-6">
+      <!-- <div class="mb-6">
         <Label for="referal_code" class="mb-2 text-md"
           >Referal Code (Optional)</Label
         >
@@ -129,7 +129,7 @@
           class="focus:border-[#3470e4] placeholder:text-lg placeholder:text-gray-300"
           type="text"
         />
-      </div>
+      </div> -->
       <Button
         type="submit"
         class="w-full bg-[#3470e4] uppercase text-sm tracking-widest font-medium"

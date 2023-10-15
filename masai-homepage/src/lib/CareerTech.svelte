@@ -122,11 +122,11 @@
         </div>
         <div class="w-9/12 flex flex-col shadow-lg bg-gray-100 p-3 rounded-xl">
             <p class="text-xl font-bold text-gray-600 text-center">Lunch A Sustainable Career</p>
-            <div class="flex gap-5 w-full py-5">
+            <div class="flex gap-5 w-full py-5 md:flex-row flex-col ">
                 <div class="w-full  h-full">
                     <iframe src="https://player.vimeo.com/video/867868566?title=0&amp;byline=0&amp;portrait=0&amp;playsinline=0&amp;autopause=0&amp;app_id=122963" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" title="Cab Driver became Software Engineer – Meet Ashish Raj from Munger, Bihar (1)" data-ready="true" class='rounded-xl w-full h-[300px]'></iframe>
                 </div>
-                <div class="w-1/2 flex flex-col gap-4">
+                <div class="md:w-1/2 flex flex-col gap-4">
                     <div class="w-full flex justify-center items-center bg-[#1a9fbd] p-4 rounded-2xl">
                         <div class='text-2xl font-bold text-[#ffdb66] mr-2'>₹6.9 LPA</div>
                         <div class="text-lg text-white font-semibold uppercase">
@@ -150,7 +150,7 @@
                     </div>
                 </div>
             </div>
-            <div class="flex justify-between">
+            <div class="flex justify-between overflow-scroll">
                 <img width="90px" height="90px" class="rounded-sm" src="https://www.masaischool.com/images/new-homepage/outcome/dream11.png" alt="alt">
                 <img width="90px" height="90px" class="rounded-sm" src="https://www.masaischool.com/images/new-homepage/outcome/global-logic.png" alt="alt">
                 <img width="90px" height="90px" class="rounded-sm" src="https://www.masaischool.com/images/new-homepage/outcome/uber.png" alt="alt">

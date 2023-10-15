@@ -49,17 +49,14 @@
       </div>
   </div>
      <!-- <hr class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4" /> -->
-     <div>
-       
-     </div>
      <div class="flex flex-wrap">
         <div class="flex flex-wrap gap-3 mb-4">
-            <Button color="dark" class="text-black bg-white" pill>Full Stack Web Development - Full Time</Button>
-            <Button color="dark" class="text-black bg-white" pill>Data Analytics - Full Time</Button>
-            <Button color="dark" class="text-black bg-white" pill>Mobile Development - Full Time</Button>
-            <Button color="dark" class="text-black bg-white" pill>Software Testing & Automation - Full Time</Button>
-            <Button color="dark" class="text-black bg-white" pill>Backend Development - Full Time</Button>
-    
+            <Button  class="text-black bg-white" pill>Full Stack Web Development - Full Time</Button>
+            <Button  class="text-black bg-white" pill>Data Analytics - Full Time</Button>
+            <Button  class="text-black bg-white" pill>Mobile Development - Full Time</Button> 
+           <div> <Button  class="text-black bg-white mb-4" pill>Software Testing & Automation - Full Time</Button>
+            <Button  class="text-black bg-white" pill>Backend Development - Full Time</Button>
+    </div>
          </div>
          <div class="md:flex md:justify-between">
      
@@ -101,7 +98,7 @@
           
           </div>
         <!-- ---------------- -->
-        <div class="mb-6 md:mb-0 flex justify-center flex-row items-center ">
+        <div class="mb-6 md:mb-0 md:p-10 p-5 flex justify-center flex-row items-center ">
             <div class="">
                 <div class="mb-5 text-center text-lg text-gray-300">
     

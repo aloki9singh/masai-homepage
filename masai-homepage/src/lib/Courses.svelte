@@ -16,8 +16,8 @@
       />
     </span>
   </p>
-  <div class="flex m-auto gap-5 w-7/12 mt-10">
-    <div class="flex flex-col w-1/2 shadow-lg rounded-e">
+  <div class="flex m-auto gap-5 md:w-7/12 w-full md:flex-row flex-col mt-10">
+    <div class="flex flex-col md:w-1/2 w-2/2 m-5 rounded-[15px] shadow-lg rounded-e">
       <div class="flex justify-center items-center bg-[#b7b8e5] py-8">
         <img
           src="https://masai-website-images.s3.ap-south-1.amazonaws.com/full_stack1_329d6b5595.png"
@@ -76,7 +76,7 @@
       </div>
     </div>
     <!-- Second Card -->
-    <div class="flex flex-col w-1/2 shadow-lg rounded-e">
+    <div class="flex flex-col md:w-1/2 m-5 rounded-[15px] shadow-lg rounded-e">
       <div class="flex justify-center items-center bg-[#e5c9b7] py-8">
         <img
           src="https://masai-website-images.s3.ap-south-1.amazonaws.com/backend_ea129d404e.png"

@@ -11,7 +11,7 @@ CORS(app)
 
 @app.route("/")
 def home():
-    return "hellow"
+    return "hello"
 
 
 @app.route("/signup", methods=["POST"])

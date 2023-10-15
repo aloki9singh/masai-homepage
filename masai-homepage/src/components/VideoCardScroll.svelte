@@ -78,9 +78,9 @@ function changeVideo(direction) {
       ></iframe>
     </div>
     <div>
-        <div class="md:flex overflow-x-auto pt-5 gap-5 justify-center">
+        <div class="md:flex md:overflow-x-auto pt-5 gap-5 justify-center w-full">
             {#each details as detail (detail.name) }
-              <div class="card-detail">
+              <div class="card-detail p-2 w-full justify-center  flex ">
                 <CardDetail detail={detail} />
               </div>
             {/each}

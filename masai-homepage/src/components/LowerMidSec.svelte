@@ -8,6 +8,7 @@
   import Footer from "./Footer.svelte";
   import HiringPartners from "./HiringPartners.svelte";
   import StudentsImpact from "./StudentsImpact.svelte";
+  import TechCommunity from "./TechCommunity.svelte";
   import VideoCardScroll from "./VideoCardScroll.svelte";
   let  arr={img1:"https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Article_Prateek_Shukla_Gen_AI_92324e2d6b.jpeg",
   img2:"https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Thungy_1_420b226e5b.webp",
@@ -15,12 +16,9 @@
 
 </script>
 <div>
-  
-    <!-- <div class="grid grid-cols-3  ">
-      <Card img={arr.img1}  heading={arr.heading1}/>
-      <Card img={arr.img2} heading={arr.heading2}/>
-      <Card img={arr.img3} heading={arr.heading3}/>
-    </div> -->
+    <div class="py-5">
+      <TechCommunity/>
+    </div>
     <HiringPartners/>
     <StudentsImpact/>
     <!-- --------Elevate section----------------------- -->
@@ -33,7 +31,7 @@
    <div class="mb-[32px] mt-[20px] w-[100%] false  ">
     <div class="news-section swiper !p-[16px]  swiper-initialized swiper-horizontal swiper-backface-hidden">
       <div class="swiper-wrapper false  flex " style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
-        <div class="swiper-slide w-full !h-auto overflow-hidden  swiper-slide-active" style="width: 448px; margin-right: 10px;">
+        <div class="swiper-slide w-full px-5 !h-auto overflow-hidden  swiper-slide-active" style="width: 448px; margin-right: 10px;">
           <div class="h-full">
          
               <div>

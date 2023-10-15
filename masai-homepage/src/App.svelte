@@ -50,9 +50,9 @@
 </script>
 
 <main>
-  <NavBar on:openSignUp={handleOpenSignUp}  on:LogOutUser={handleLogOut}/>
+  <NavBar on:openSignUp={handleOpenSignUp} user={user} on:LogOutUser={handleLogOut}/>
   <SignUp
-   
+   hidden6={drawerId.hiddenSignUp}
     on:openSignIn={handleOpenSignIn}
     on:closeSignUp={handleCloseVerify}
   />
