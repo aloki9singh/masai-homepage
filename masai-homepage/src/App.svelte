@@ -1,56 +1,75 @@
 <script>
+  // CSS Import
   // Component Import
-  import SignUp from "./lib/SignUp.svelte"
+  import SignUp from "./lib/SignUp.svelte";
   import SignIn from "./lib/SignIn.svelte";
   import NavBar from "./lib/NavBar.svelte";
-  import { Button,Drawer, CloseButton, Input, Label,Textarea, Heading } from "flowbite-svelte";
+  import Banner from "./lib/Banner.svelte";
+  import Courses from "./lib/Courses.svelte";
+  import CareerTech from "./lib/CareerTech.svelte";
+  import Verify from "./lib/Verify.svelte";
+    import Pedagogy from "./lib/Pedagogy.svelte";
+  import LowerMidSec from "./components/LowerMidSec.svelte";
   import Footer from "./components/Footer.svelte";
-  import Card from "./components/Card.svelte";
-  import VideoCardScroll from "./components/VideoCardScroll.svelte";
-  import LoweMidSec from "./components/LoweMidSec.svelte";
+  // Library Import
   
-  let  arr={img1:"https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Article_Prateek_Shukla_Gen_AI_92324e2d6b.jpeg",
-  img2:"https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Thungy_1_420b226e5b.webp",
-  img3:"https://masai-website-images.s3.ap-south-1.amazonaws.com/PR_Thingy_2_f2c52e6fcf.webp",heading1:"Empowering Education Through GenAI",heading2:"Masai School targets fivefold revenue growth in three years",heading3:"Beyond Degrees: Embracing Alternative Credentialing and Micro-learning in Tech Recruitment"}
+  // State Management
+  // Drawer Management
+  let drawerId = {
+    hiddenSignUp: true,
+    hiddenVerify: true,
+    hiddenSignIn: true,
+  };
+  const handleOpenSignUp = () => {
+    drawerId = { ...drawerId, hiddenSignUp: false, hiddenSignIn: true };
+  };
+  const handleOpenSignIn = () => {
+    drawerId = { ...drawerId, hiddenSignIn: false, hiddenSignUp: true };
+  };
+  const handleOpenVerify = () => {
+    drawerId = { ...drawerId, hiddenSignIn: true, hiddenVerify: false };
+  };
+  const handleCloseVerify = () => {
+    drawerId = {
+      ...drawerId,
+      hiddenSignIn: true,
+      hiddenSignUp: true,
+      hiddenVerify: true,
+    };
+  };
+  // Auth Management
+  
+  let user=null;
+  const handleLogin=(event)=>{
+    console.log(event.detail)
+    user=event.detail;
+  }
+  const handleLogOut=()=>{
+    user=null;
+  }
 </script>
 
 <main>
-  <div
-    class="w-full p-2 bg-[#fedfe5] flex justify-center items-center gap-3 sticky"
-  >
-    <p>Applications for our 6th November Batches are now open!</p>
-    <Button class="bg-[#ed0331] uppercase tracking-wider">Apply Now</Button>
-  </div>
-  <NavBar/>
-  <SignUp/>
-  <SignIn/>
-
-  <div class="w-full">
-    <img
-      src="https://masai-website-images.s3.ap-south-1.amazonaws.com/banner_h_1_3d43d26bd0.webp"
-      alt="masai-banner"
-    />
-  </div>
-  <div class='w-full'>
-    <h1 class='text-center text-4xl font-extrabold'>Masai In <span class='text-[]'>News</span></h1>
-    <div>
-      <div>
-        <img src="" alt="">
-        <p></p>
-      </div>
-      <div>
-        <img src="" alt="">
-        <p></p>
-      </div>
-      <div>
-      <img src="" alt="">
-      <p></p>
-      </div>
-    </div>
-  </div>
-    <LoweMidSec/>
+  <NavBar on:openSignUp={handleOpenSignUp}  on:LogOutUser={handleLogOut}/>
+  <SignUp
+   
+    on:openSignIn={handleOpenSignIn}
+    on:closeSignUp={handleCloseVerify}
+  />
+  <SignIn
+    hidden6={drawerId.hiddenSignIn}
+    on:openSignUp={handleOpenSignUp}
+    on:openVerify={handleOpenVerify}
+    on:closeSignIn={handleCloseVerify}
+  />
+  <Verify hidden6={drawerId.hiddenVerify} on:closeVerify={handleCloseVerify} on:LogInUser={handleLogin}/>
+  <Banner />
+  <CareerTech />
+  <Courses />
+  <Pedagogy/>
+  <LowerMidSec/>
+  <Footer/>
 </main>
 
 <style>
-
 </style>
