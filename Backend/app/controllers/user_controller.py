@@ -31,6 +31,9 @@ def signup():
         if email and not re.match(r"[^@]+@[^@]+\.[^@]+", email):
             raise CustomException("Invalid email format.", 400)
 
+        if not email.endswith("@gmail.com"):
+            raise CustomException("Only @gmail.com addresses are allowed.", 400)
+
         if phone and not re.match(r"^\d{10}$", phone):
             raise CustomException(
                 "Invalid phone format. Please provide a 10-digit phone number.", 400
@@ -70,6 +73,9 @@ def login():
 
         if email and not re.match(r"[^@]+@[^@]+\.[^@]+", email):
             raise CustomException("Invalid email format.", 400)
+
+        if not email.endswith("@gmail.com"):
+            raise CustomException("Only @gmail.com addresses are allowed.", 400)
 
         if phone and not re.match(r"^\d{10}$", phone):
             raise CustomException(
