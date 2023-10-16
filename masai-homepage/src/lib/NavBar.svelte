@@ -54,11 +54,9 @@
           }}>Sign Up</Button
         >
       {:else}
-        <div
-          class="flex justify-center items-center border-2 border-red-300 rounded-lg"
-        >
+        <div class="flex justify-center items-center rounded-lg pr-2">
           <Avatar>{removeAfterAtSymbol(user.email)[0]}</Avatar>
-          <span>{removeAfterAtSymbol(user.email)}</span>
+          <span class="ml-2">{removeAfterAtSymbol(user.email)}</span>
           <ArrowKeyDown class="border-none" />
           <Dropdown>
             <DropdownItem>Dashboard</DropdownItem>
