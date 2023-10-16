@@ -1,92 +1,107 @@
 <script>
-    import { Button, CloseButton, Drawer, Input, Label } from "flowbite-svelte";
-    import { sineIn } from "svelte/easing";
-    import { createEventDispatcher } from "svelte";
-    export let hidden6;
-    let transitionParamsRight = {
-        x: 320,
-        duration: 200,
-        easing: sineIn,
-    };
-    const dispatch = createEventDispatcher();
-    let formData={
-        credential:''
+  import { Button, CloseButton, Drawer, Input, Label } from "flowbite-svelte";
+  import { sineIn } from "svelte/easing";
+  import { createEventDispatcher } from "svelte";
+  export let hidden6;
+  let transitionParamsRight = {
+    x: 320,
+    duration: 200,
+    easing: sineIn,
+  };
+  const dispatch = createEventDispatcher();
+  let formData = {
+    credential: "",
+  };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    let userData;
+
+    if (formData.credential.includes("@gmail.com")) {
+      userData = {
+        email: formData.credential,
+      };
+    } else {
+      userData = {
+        phone: formData.credential,
+      };
     }
-    const handleSubmit=async (event)=>{
-        event.preventDefault();
-        fetch('http://localhost:5000/login', {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify({ email:formData.credential, phone: formData.credential })
-            })
-                .then(response => response.json())
-                .then(data => {
-                    localStorage.setItem('user',data.message)
-                    dispatch('openVerify');
-                })
-                .catch(error => {
-                    error.json().then(errorMessage => {
-                        alert(errorMessage.error)
-                    });
-                });
-    }
+    fetch("http://localhost:5000/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(userData),
+    })
+      .then((response) => {
+        console.log(response);
+        return response.json();
+      })
+      .then((data) => {
+        localStorage.setItem("user", JSON.stringify(data.user));
+        let otp = Math.floor(100000 + Math.random() * 900000);
+        localStorage.setItem("otp", JSON.stringify(otp));
+        alert(otp);
+
+        dispatch("openVerify");
+      })
+      .catch((error) => {
+        alert(error?.error || "Internal server error!");
+      });
+  };
 </script>
 
 <div>
-    <Drawer
-        placement="right"
-        transitionType="fly"
-        transitionParams={transitionParamsRight}
-        bind:hidden={hidden6}
-        id="sidebar6"
-        class="w-1/3"
-    >
-        <div class="flex items-center">
-            <CloseButton
-                on:click={()=>dispatch('closeSignIn')}
-                class="mb-4 dark:text-white"
-            />
+  <Drawer
+    placement="right"
+    transitionType="fly"
+    transitionParams={transitionParamsRight}
+    bind:hidden={hidden6}
+    id="sidebar6"
+    class="w-1/3"
+  >
+    <div class="flex items-center">
+      <CloseButton
+        on:click={() => dispatch("closeSignIn")}
+        class="mb-4 dark:text-white"
+      />
+    </div>
+    <div class="h-96 flex flex-col justify-center">
+      <h2 class="text-2xl text-center font-bold mt-10">SignIn</h2>
+      <p class="text-center text-lg mb-6">
+        New User?
+        <span
+          role="button"
+          tabindex="0"
+          on:keydown={() => {}}
+          on:click={() => {
+            dispatch("openSignUp");
+          }}
+          class="text-[#3470e4] ml-1"
+        >
+          SignUp
+        </span>
+      </p>
+      <form action="#" class="mt-6" on:submit={handleSubmit}>
+        <div class="mb-6">
+          <Label for="fullname" class="block mb-2 text-md"
+            >Phone number or email address<span class="text-red-600">*</span
+            ></Label
+          >
+          <Input
+            id="fullname"
+            name="fullname"
+            required
+            placeholder="Enter phone number or email address"
+            class="focus:border-[#3470e4] placeholder:text-lg placeholder:text-gray-300 text-md"
+            bind:value={formData.credential}
+          />
         </div>
-        <div class="h-96 flex flex-col justify-center">
-            <h2 class="text-2xl text-center font-bold mt-10">SignIn</h2>
-            <p class="text-center text-lg mb-6">
-                New User?
-                <span
-                    role="button"
-                    tabindex="0"
-                    on:keydown={() => {}}
-                    on:click={() => {
-                        dispatch("openSignUp");
-                    }}
-                    class="text-[#3470e4] ml-1"
-                >
-                    SignUp
-                </span>
-            </p>
-            <form action="#" class="mt-6" on:submit={handleSubmit}>
-                <div class="mb-6">
-                    <Label for="fullname" class="block mb-2 text-md"
-                        >Phone number or email address<span class="text-red-600"
-                            >*</span
-                        ></Label
-                    >
-                    <Input
-                        id="fullname"
-                        name="fullname"
-                        required
-                        placeholder="Enter phone number or email address"
-                        class="focus:border-[#3470e4] placeholder:text-lg placeholder:text-gray-300 text-md"
-                        bind:value={formData.credential}
-                    />
-                </div>
-                <Button
-                    type="submit"
-                    class="w-full bg-[#3470e4] uppercase text-sm tracking-widest font-medium"
-                    >Continue</Button
-                >
-            </form>
-        </div>
-    </Drawer>
+        <Button
+          type="submit"
+          class="w-full bg-[#3470e4] uppercase text-sm tracking-widest font-medium"
+          >Continue</Button
+        >
+      </form>
+    </div>
+  </Drawer>
 </div>

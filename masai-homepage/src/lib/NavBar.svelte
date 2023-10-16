@@ -13,6 +13,14 @@
   } from "flowbite-svelte";
   import { createEventDispatcher } from "svelte";
   export let user;
+  function removeAfterAtSymbol(inputString) {
+    const atIndex = inputString.indexOf("@");
+    if (atIndex !== -1) {
+      return inputString.substring(0, atIndex);
+    }
+    return inputString;
+  }
+
   const dispatch = createEventDispatcher();
 </script>
 
@@ -49,14 +57,16 @@
         <div
           class="flex justify-center items-center border-2 border-red-300 rounded-lg"
         >
-          <Avatar>JL</Avatar>
-          <span>Ajaya</span>
+          <Avatar>{removeAfterAtSymbol(user.email)[0]}</Avatar>
+          <span>{removeAfterAtSymbol(user.email)}</span>
           <ArrowKeyDown class="border-none" />
           <Dropdown>
             <DropdownItem>Dashboard</DropdownItem>
-            <DropdownItem on:click={()=>{
-              dispatch('LogOutUser')
-            }}>Sign out</DropdownItem>
+            <DropdownItem
+              on:click={() => {
+                dispatch("LogOutUser");
+              }}>Sign out</DropdownItem
+            >
           </Dropdown>
         </div>
       {/if}

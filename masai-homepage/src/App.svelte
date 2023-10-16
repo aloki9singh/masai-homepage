@@ -8,11 +8,11 @@
   import Courses from "./lib/Courses.svelte";
   import CareerTech from "./lib/CareerTech.svelte";
   import Verify from "./lib/Verify.svelte";
-    import Pedagogy from "./lib/Pedagogy.svelte";
+  import Pedagogy from "./lib/Pedagogy.svelte";
   import LowerMidSec from "./components/LowerMidSec.svelte";
   import Footer from "./components/Footer.svelte";
   // Library Import
-  
+
   // State Management
   // Drawer Management
   let drawerId = {
@@ -38,21 +38,26 @@
     };
   };
   // Auth Management
-  
-  let user=null;
-  const handleLogin=(event)=>{
-    console.log(event.detail)
-    user=event.detail;
-  }
-  const handleLogOut=()=>{
-    user=null;
-  }
+
+  let user = null;
+  const handleLogin = (event) => {
+    console.log(event.detail);
+    user = event.detail;
+  };
+  const handleLogOut = () => {
+    user = null;
+    localStorage.removeItem("user");
+  };
 </script>
 
 <main>
-  <NavBar on:openSignUp={handleOpenSignUp} user={user} on:LogOutUser={handleLogOut}/>
+  <NavBar
+    on:openSignUp={handleOpenSignUp}
+    {user}
+    on:LogOutUser={handleLogOut}
+  />
   <SignUp
-   hidden6={drawerId.hiddenSignUp}
+    hidden6={drawerId.hiddenSignUp}
     on:openSignIn={handleOpenSignIn}
     on:closeSignUp={handleCloseVerify}
   />
@@ -62,13 +67,17 @@
     on:openVerify={handleOpenVerify}
     on:closeSignIn={handleCloseVerify}
   />
-  <Verify hidden6={drawerId.hiddenVerify} on:closeVerify={handleCloseVerify} on:LogInUser={handleLogin}/>
+  <Verify
+    hidden6={drawerId.hiddenVerify}
+    on:closeVerify={handleCloseVerify}
+    on:LogInUser={handleLogin}
+  />
   <Banner />
   <CareerTech />
   <Courses />
-  <Pedagogy/>
-  <LowerMidSec/>
-  <Footer/>
+  <Pedagogy />
+  <LowerMidSec />
+  <Footer />
 </main>
 
 <style>
