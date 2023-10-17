@@ -25,7 +25,7 @@
       body: JSON.stringify({
         full_name: formData.username,
         email: formData.email,
-        phone: formData.phone
+        phone: formData.phone,
       }),
     })
       .then((response) => {
@@ -38,10 +38,10 @@
         }
       })
       .then((data) => {
-        alert(data?.message)
+        alert(data?.message);
       })
       .catch((error) => {
-       alert(error?.message)
+        alert(error?.message);
       });
   };
 </script>
