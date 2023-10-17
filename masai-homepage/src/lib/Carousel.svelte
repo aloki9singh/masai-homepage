@@ -25,12 +25,12 @@
 </script>
 
 <div
-    class="m-auto w-full  h-[500px] flex justify-center items-center relative z-[-1]"
+    class="m-auto md:w-11/12 w-10/12  md:h-[430px] h-[400px] flex justify-center items-center relative z-[-1]"
 >
     <img
         src={images[currentIndex]}
         alt={`Slide ${1}`}
        class="w-full h-full object-fit bg-[#d6e2fa] rounded-2xl"
     />
-    <span class="m-auto border-[2px] border-solid border-blue-500 rounded-2xl h-full w-full absolute rotate-[-12deg] z-[-2]"></span>
+    <span class="m-auto border-[2px] border-solid border-blue-500 rounded-2xl h-full w-full absolute sm:rotate-[-8deg] rotate-[-12deg] z-[-2]"></span>
 </div>

@@ -30,13 +30,16 @@
     <Button class="bg-[#ed0331] uppercase tracking-wider">Apply Now</Button>
   </div>
   <Navbar class="w-full">
-    <NavBrand href="/">
-      <img
-        src="https://masai-website-images.s3.ap-south-1.amazonaws.com/logo.png"
-        class="mr-3 h-6 sm:h-9"
-        alt="Masai Logo"
-      />
-    </NavBrand>
+    <div class="flex justify-between items-center md:gap-2">
+      <NavHamburger class='p-0'/>
+      <NavBrand href="/">
+        <img
+          src="https://masai-website-images.s3.ap-south-1.amazonaws.com/logo.png"
+          class="mr-3 h-10"
+          alt="Masai Logo"
+        />
+      </NavBrand>
+    </div>
     <div class="flex gap-3 md:order-2">
       <Button
         size="lg"
@@ -48,7 +51,7 @@
           size="xl"
           outline
           color="red"
-          class="hover:bg-red-100 hover:text-red-500 pl-2 pr-2"
+          class="hover:bg-red-100 hover:text-red-200 pl-2 pr-2 border-none lg:border lg:border-solid lg:border-red-600"
           on:click={() => {
             dispatch("openSignUp");
           }}>Sign Up</Button
@@ -68,9 +71,8 @@
           </Dropdown>
         </div>
       {/if}
-      <NavHamburger />
     </div>
-    <NavUl ulClass="text-sm font-medium flex uppercase gap-9">
+    <NavUl ulClass="text-sm font-medium flex uppercase h-screen md:h-full  flex flex-col md:flex-row md:gap-2 lg:gap-9">
       <NavLi href="/" active={true}>Courses</NavLi>
       <NavLi href="/">Fees</NavLi>
       <NavLi href="/">Events</NavLi>

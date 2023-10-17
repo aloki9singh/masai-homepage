@@ -2,7 +2,7 @@
   import { Button } from "flowbite-svelte";
 
 </script>
-<p class="text-3xl font-[700] text-center z-[-1]">
+<p class="md:text-3xl text-2xl font-[700] text-center z-[-1]">
     <span class="z-[-10]">Best-In-Class</span>
     <span class="text-[#ed0331] relative z-[-1]">
         Curriculum
@@ -23,33 +23,33 @@
     </span>
 </p>
 <div class="w-full relative">
-    <div class="w-full h-[500px] mt-8 px-20 overflow-scroll">
-        <div class="w-5/12">
-            <div class='w-full mb-52'>
-                <h3 class="text-2xl font-[700] mb-8 z-[-10]">100% <span class="text-[#ed0331]">Live</span>  Distance Learning</h3>
-                <p class='text-md'>India’s Only Live Tech-Learning Course With Tier 1 Instructors. Get Real-Time Feedback, Interactive Sessions & A Personalised Learning Experience.</p>
+    <div class="w-full h-[450px] mt-8 md:px-20 px-5 overflow-scroll">
+        <div class="md:w-5/12 w-full">
+            <div class='w-full md:mb-52 mb-6 shadow-xl p-3 rounded-md text-center md:text-left md:shadow-none'>
+                <img src="https://www.masaischool.com/images/new-homepage/curriculum-style/laptop.svg" alt="laptop-svg" class='mx-auto md:hidden'>
+                <h3 class="md:text-2xl  text-lg font-[700] md:mb-8 mb-4 z-[-10]">100% <span class="text-[#ed0331]">Live</span>  Distance Learning</h3>
+                <p class='tmd:ext-md text-sm'>India’s Only Live Tech-Learning Course With Tier 1 Instructors. Get Real-Time Feedback, Interactive Sessions & A Personalised Learning Experience.</p>
             </div>
-            <div class='w-full mb-52'>
-                <h3 class="text-2xl font-[700] mb-8 z-[-10]">Generative <span class="text-[#ed0331]">AI Integrated</span> Program</h3>
-                <p class='text-md'>Harness & Implement The Power Of AI In Coding & Data Analytics. What’s More? Use Custom AI Tools To Enhance Placement Preparation.</p>
+            <div class='w-full md:mb-52 mb-6 shadow-xl p-3 rounded-md text-center md:text-left md:shadow-none'>
+                <h3 class="md:text-2xl text-lg font-[700] md:mb-8 mb-4 z-[-10]">Generative <span class="text-[#ed0331]">AI Integrated</span> Program</h3>
+                <p class='md:text-md text-sm'>Harness & Implement The Power Of AI In Coding & Data Analytics. What’s More? Use Custom AI Tools To Enhance Placement Preparation.</p>
             </div>
-            <div class='w-full mb-52'>
-                <h3 class="text-2xl font-[700] mb-8 z-[-10]"> <span class="text-[#ed0331]">Industry Ready</span> Curriculum</h3>
-                <p class='text-md'> 
-                    Our Curriculum Is Regularly Updated Through Industry Feedback. In-Demand Specialisations Are Added To Aid Our Students Launch Sustainable Careers.</p>
+            <div class='w-full md:mb-52 mb-6 shadow-xl p-3 rounded-md text-center md:text-left md:shadow-none'>
+                <h3 class="md:text-2xl text-lg font-[700] md:mb-8 mb-4 z-[-10]"> <span class="text-[#ed0331]">Industry Ready</span> Curriculum</h3>
+                <p class='md:text-md text-sm'> Our Curriculum Is Regularly Updated Through Industry Feedback. In-Demand Specialisations Are Added To Aid Our Students Launch Sustainable Careers.</p>
             </div>
-            <div class='w-full mb-52'>
-                <h3 class="text-2xl font-[700] mb-8 z-[-10]">Focus On Learning <span class="text-[#ed0331]">Agility</span></h3>
-                <p class='text-md'>We Prioritise Flexible Thinking & Continuous Skill Development. Stay Nimble In An Ever-Changing World By Embracing Adaptability, Curiosity & Rapid Learning.</p>
+            <div class='w-full md:mb-52 mb-6 shadow-xl p-3 rounded-md text-center md:text-left md:shadow-none'>
+                <h3 class="md:text-2xl text-lg font-[700] md:mb-8 mb-4 z-[-10]">Focus On Learning <span class="text-[#ed0331]">Agility</span></h3>
+                <p class='md:text-md text-sm'>We Prioritise Flexible Thinking & Continuous Skill Development. Stay Nimble In An Ever-Changing World By Embracing Adaptability, Curiosity & Rapid Learning.</p>
             </div>
-            <div class='w-full mb-52'>
-                <h3 class="text-2xl font-[700] mb-8 z-[-10]">Industry Ready In Just <span class="text-[#ed0331]">25 - 35 Weeks</span></h3>
-                <p class='text-md'>Curriculum At Masai Is Designed To Be Intensive & Extensive. With Our Unique Pedagogy Learn Right In Less Time. All We Ask Is Your Dedication!</p>
+            <div class='w-full md:mb-52 mb-6 shadow-xl p-3 rounded-md text-center md:text-left md:shadow-none'>
+                <h3 class="md:text-2xl text-lg font-[700] md:mb-8 mb-4 z-[-10]">Industry Ready In Just <span class="text-[#ed0331]">25 - 35 Weeks</span></h3>
+                <p class='md:text-md text-sm'>Curriculum At Masai Is Designed To Be Intensive & Extensive. With Our Unique Pedagogy Learn Right In Less Time. All We Ask Is Your Dedication!</p>
             </div>
         </div>
     </div>
-    <div>
-        <img src="https://www.masaischool.com/images/new-homepage/curriculum-style/course-image5.webp" class="h-[500px] w-5/12 absolute top-8 right-20 rounded-2xl z-[-2]" alt="pedagogy">
+    <div class='hidden md:block'>
+        <img src="https://www.masaischool.com/images/new-homepage/curriculum-style/course-image5.webp" class="h-[450px] w-5/12 absolute bottom-2 right-20 rounded-2xl z-[-2]" alt="pedagogy">
     </div>
 </div>
 
@@ -57,4 +57,11 @@
     <Button class="bg-[#ed0331] uppercase tracking-wide p-3"
       >GET YOUR DREAM JOB</Button
     >
-  </div></div>
+  </div>
+</div>
+// https://www.masaischool.com/images/new-homepage/curriculum-style/laptop.svg
+// https://www.masaischool.com/images/new-homepage/curriculum-style/star.svg
+// https://www.masaischool.com/images/new-homepage/curriculum-style/bulb.svg
+// https://www.masaischool.com/images/new-homepage/curriculum-style/check.svg
+// https://www.masaischool.com/images/new-homepage/curriculum-style/certificate.svg
+// https://www.masaischool.com/images/new-homepage/curriculum-style/graduate.svg

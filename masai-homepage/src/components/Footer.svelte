@@ -18,7 +18,7 @@
     <div>
         <img src="https://masaischool.com/images/footer/masai-logo-dark.svg" alt="">
     </div>
-    <div class="flex mt-4 space-x-6 sm:justify-center items-center sm:mt-0">
+    <div class="flex mt-4 space-x-6 sm:justify-center items-center overflow-scroll sm:mt-0">
         <div class="text-gray-500">
             Follow us :-
         </div>

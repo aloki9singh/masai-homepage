@@ -3,9 +3,9 @@
   import { CheckCircleSolid } from "flowbite-svelte-icons";
 </script>
 
-<div class='mt-20'>
-  <h1 class="text-5xl font-[700] text-center pb-5">Our Courses</h1>
-  <p class="text-3xl font-[700] text-center">
+<div class='md:mt-20 mt-5'>
+  <h1 class="md:text-5xl font-[700] text-2xl text-center pb-5">Our Courses</h1>
+  <p class="md:text-3xl font-[700] text-xl text-center">
     Practice-Based Learning Tracks,
     <span class="text-[#ed0331] relative z-[-1]">
       Supercharged By A.I.
@@ -16,7 +16,7 @@
       />
     </span>
   </p>
-  <div class="flex m-auto gap-5 md:w-7/12 w-full md:flex-row flex-col mt-10">
+  <div class="flex m-auto gap-5 md:w-9/12 w-full md:flex-row flex-col md:mt-10 mt-3">
     <div class="flex flex-col md:w-1/2 w-2/2 m-5 rounded-[15px] shadow-lg rounded-e">
       <div class="flex justify-center items-center bg-[#b7b8e5] py-8">
         <img

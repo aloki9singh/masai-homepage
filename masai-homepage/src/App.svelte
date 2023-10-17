@@ -10,8 +10,8 @@
   import Pedagogy from "./lib/Pedagogy.svelte";
   import LowerMidSec from "./components/LowerMidSec.svelte";
   import Footer from "./components/Footer.svelte";
-  import Home from './lib/Home.svelte'
-  import Banner from './lib/Banner.svelte'
+  import Home from "./lib/Home.svelte";
+  import Banner from "./lib/Banner.svelte";
   // Library Import
 
   // State Management
@@ -57,7 +57,15 @@
     {user}
     on:LogOutUser={handleLogOut}
   />
-  <Banner/>
+  <Banner />
+  <div class='md:px-20'>
+    <Home />
+    <CareerTech />
+    <Courses />
+    <Pedagogy />
+    <LowerMidSec />
+    <Footer />
+  </div>
   <SignUp
     hidden6={drawerId.hiddenSignUp}
     on:openSignIn={handleOpenSignIn}
@@ -74,12 +82,6 @@
     on:closeVerify={handleCloseVerify}
     on:LogInUser={handleLogin}
   />
-  <Home/>
-  <CareerTech />
-  <Courses />
-  <Pedagogy />
-  <LowerMidSec />
-  <Footer />
 </main>
 
 <style>
