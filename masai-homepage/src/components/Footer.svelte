@@ -66,6 +66,7 @@
               <!-- <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2> -->
               <FooterLinkGroup ulClass="text-gray-300">
                 <FooterLink liClass=" hover:text-red-700   mb-4" style="text-decoration: none;" >Success Stories</FooterLink>
+                <FooterLink liClass=" hover:text-red-700   mb-4" style="text-decoration: none; md:hidden block" >About Us</FooterLink>
                 <FooterLink liClass=" hover:text-red-700   mb-4" style="text-decoration: none;" >Our Team</FooterLink>
                 <FooterLink liClass=" hover:text-red-700   mb-4" style="text-decoration: none;" >Careers</FooterLink>
                 <FooterLink liClass=" hover:text-red-700   mb-4" style="text-decoration: none;" >Masai Blog</FooterLink>
@@ -85,8 +86,8 @@
             </div>
             <div >
               <!-- <h2 class="mb-6 text-sm font-semibold uppercase text-gray-900 dark:text-white">Legal</h2> -->
-              <FooterLinkGroup ulClass="text-gray-300">
-                <FooterLink liClass=" hover:text-red-700   mb-4" style="text-decoration: none;" >About Us</FooterLink>
+              <FooterLinkGroup ulClass="text-gray-300 md:block hidden">
+                <FooterLink liClass=" hover:text-red-700   mb-4" style="text-decoration: none; md:block hidden" >About Us</FooterLink>
                 <FooterLink liClass=" hover:text-red-700   mb-4" style="text-decoration: none;" >FAQ</FooterLink>
                 <FooterLink liClass=" hover:text-red-700   mb-4" style="text-decoration: none;" >Referral Program</FooterLink>
                 <FooterLink liClass=" hover:text-red-700   mb-4" style="text-decoration: none;" >Masai Learn</FooterLink>
