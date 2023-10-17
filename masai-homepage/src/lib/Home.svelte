@@ -6,10 +6,10 @@
 
 <div>
   <div
-    class="flex md:text-left text-center justify-between items-center relative md:flex-row flex-col md:text-auto"
+    class="flex md:text-left text-center  justify-between items-center relative md:flex-row flex-col md:text-auto"
   >
     <div class="flex flex-col gap-5 w-full py-5">
-      <div class="md:text-5xl lg:text-4xl text-2xl font-extrabold w-full text-center lg:flex lg:flex-col lg:text-left">
+      <div class="md:text-5xl lg:text-4xl text-2xl  font-extrabold w-full text-center lg:flex lg:flex-col lg:text-left">
         <span class="py-2 sm:inline">Realise Your Potential</span>
         <span>
           With

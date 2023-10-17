@@ -64,9 +64,10 @@
     <CareerTech />
     <Courses />
     <Pedagogy />
-    <LowerMidSec />
-    <Footer />
+   
   </div>
+  <LowerMidSec />
+  <Footer />
   <SignUp
     hidden6={drawerId.hiddenSignUp}
     on:openSignIn={handleOpenSignIn}

@@ -24,25 +24,25 @@
           Follow us :-
       </div>
       <FooterIcon href="/">
-          <TwitterSolid class="w-8 h-5 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+          <TwitterSolid class="md:w-8 w-5 h-5 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
         </FooterIcon>
       <FooterIcon href="/">
-        <FacebookSolid class="w-8 h-5 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+        <FacebookSolid class="md:w-8 w-5 h-5 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
       </FooterIcon>
       <FooterIcon href="/">
-          <LinkedinSolid class="w-8 h-5 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+          <LinkedinSolid class="md:w-8 w-5 h-5 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
         </FooterIcon>
       <FooterIcon href="/">
-        <DiscordSolid class="w-8 h-5 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+        <DiscordSolid class="md:w-8 w-5 h-5 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
       </FooterIcon>
       
     
      
       <FooterIcon href="/">
-        <GithubSolid class="w-8 h-5 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+        <GithubSolid class="md:w-8 w-5 h-5 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
       </FooterIcon>
       <FooterIcon href="/">
-          <YoutubeSolid class="w-8 h-5 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
+          <YoutubeSolid class="md:w-8 w-5 h-5 text-gray-500 dark:text-gray-500 hover:text-gray-900 dark:hover:text-white" />
         </FooterIcon>
       <FooterIcon href="/">
         <!-- <Dribble /> -->
@@ -51,7 +51,7 @@
 </div>
    <!-- <hr class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4" /> -->
    <div class="flex flex-wrap">
-      <div class="flex flex-wrap gap-3 mb-4 p-2 w-[90%] xl:text-sm">
+      <div class="flex flex-wrap gap-3 mb-4 p-2 md:w-[90%] xl:text-sm">
           <Button  class="text-black bg-white" pill>Full Stack Web Development - Full Time</Button>
           <Button  class="text-black bg-white" pill>Data Analytics - Full Time</Button>
           <Button  class="text-black bg-white" pill>Mobile Development - Full Time</Button> 

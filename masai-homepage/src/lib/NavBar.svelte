@@ -29,7 +29,7 @@
     <p>Applications for our 6th November Batches are now open!</p>
     <Button class="bg-[#ed0331] uppercase tracking-wider">Apply Now</Button>
   </div>
-  <Navbar class="w-full">
+  <Navbar class="w-full md:w-[80%] m-auto">
     <div class="flex justify-between items-center md:gap-2">
       <NavHamburger class='p-0'/>
       <NavBrand href="/">
