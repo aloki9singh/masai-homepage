@@ -29,7 +29,7 @@
     <p>Applications for our 6th November Batches are now open!</p>
     <Button class="bg-[#ed0331] uppercase tracking-wider px-3 text-[15px] py-2">Apply Now</Button>
   </div>
-  <Navbar class="w-full md:w-[80%] m-auto py-5">
+  <Navbar class="w-full md:w-[80%] m-auto flex ">
     <div class="flex justify-between items-center md:gap-2">
       <NavHamburger class='p-0'/>
       <NavBrand href="/">
@@ -44,7 +44,7 @@
     <div class="flex gap-3 md:order-2">
       <Button
         size="lg"
-        class="uppercase pl-1 pr-1 px-2 bg-[#e5feff] text-[#6E71CC] hover:bg-[#8bd3d5]"
+        class="uppercase pl-1 pr-1 px-2 bg-[#e5feff]  text-[#6E71CC] hover:bg-[#8bd3d5] md:block hidden"
         >Refer & Earn</Button
       >
       {#if !user}

@@ -4,7 +4,7 @@
     export let detail;
   </script>
   
-  <Card class="md:w-[350px]  rounded-[30px] flex justify-center w-full  " >
+  <Card class="md:w-[350px]   rounded-[30px] flex justify-center w-[300px]  " >
     <div class="w-full flex justify-end ">
       <LinkedinSolid class="w-7 h-7 mb-3 text-white text-right bg-blue-700 rounded p-1 pb-0"/>
       
