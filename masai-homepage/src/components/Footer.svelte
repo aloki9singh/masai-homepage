@@ -51,11 +51,11 @@
 </div>
    <!-- <hr class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4" /> -->
    <div class="flex flex-wrap">
-      <div class="flex flex-wrap gap-3 mb-4 p-2 md:w-[90%] xl:text-sm">
-          <Button  class="text-black bg-white" pill>Full Stack Web Development - Full Time</Button>
+      <div class="flex flex-wrap gap-3 mb-4 p-2 md:w-[90%] xl:text-sm sm:text-[15px] ">
+          <Button  class="text-black bg-white  md:text-[16px] text-[13px]" pill>Full Stack Web Development - Full Time</Button>
           <Button  class="text-black bg-white" pill>Data Analytics - Full Time</Button>
           <Button  class="text-black bg-white" pill>Mobile Development - Full Time</Button> 
-         <div> <Button  class="text-black bg-white " pill>Software Testing & Automation - Full Time</Button>
+         <div> <Button  class="text-black bg-white mb-3 md:text-[16px] text-[12px]" pill>Software Testing & Automation - Full Time</Button>
           <Button  class="text-black bg-white" pill>Backend Development - Full Time</Button>
   </div>
        </div>
