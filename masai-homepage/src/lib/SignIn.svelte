@@ -12,41 +12,53 @@
   let formData = {
     credential: "",
   };
+  // phone check
+  const checkPhone=(num)=>{
+    if(num.length!==10||isNaN(num)){
+      return false;
+    }
+    return true;
+  }
   const handleSubmit = (event) => {
     event.preventDefault();
-    let userData;
-
-    if (formData.credential.includes("@gmail.com")) {
-      userData = {
-        email: formData.credential,
-      };
-    } else {
-      userData = {
-        phone: formData.credential,
-      };
+    let loginData;
+    const isEmail = /^[^@]+@[^@]+\.[^@]+$/.test(formData.credential);
+    if(isEmail){
+      loginData={email:formData.credential}
     }
-    fetch("http://localhost:5000/login", {
+    const isPhone=checkPhone(formData.credential);
+    if(isPhone){
+      loginData={phone:formData.credential}
+    }
+    console.log(isEmail,isPhone)
+    if(!isPhone&&!isEmail){
+     return alert("Enter valid email or phone")
+    }
+
+    fetch("http://kapil7982.pythonanywhere.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(userData),
+      body: JSON.stringify(loginData),
     })
-      .then((response) => {
-        console.log(response);
-        return response.json();
-      })
+      .then((response) => response.json())
       .then((data) => {
-        localStorage.setItem("user", JSON.stringify(data.user));
-        let otp = Math.floor(100000 + Math.random() * 900000);
-        localStorage.setItem("otp", JSON.stringify(otp));
-        alert(otp);
-
-        dispatch("openVerify");
+        if (data.error) {
+          alert(`Error ${data.status_code}: ${data.error}`);
+        } else {
+          if (data.otp) {
+            localStorage.setItem('otp',JSON.stringify(data.otp));
+            alert(
+              `OTP: ${data.otp},Expire In 5 Min`
+            );
+            dispatch('openVerify')
+          } else {
+            alert(data.message); 
+          }
+        }
       })
-      .catch((error) => {
-        alert(error?.error || "Internal server error!");
-      });
+      .catch((error) =>alert(error));
   };
 </script>
 
