@@ -15,7 +15,7 @@
         To Launch Your Career In Tech
     </h1>
     <div class="w-11/12 mt-6 md:flex  mx-auto">
-        <div class="md:w-4/12 w-full flex md:flex-col md:justify-between md:relative text-sm z-[-1] overflow-scroll gap-4 md:gap-0">
+        <div class="md:w-4/12 w-full flex md:flex-col md:justify-between md:relative text-sm  overflow-scroll gap-4 md:gap-0">
             <Button
                 outline
                 color="red"
@@ -160,3 +160,5 @@
         </div>
     </div>
 </div>
+<style>
+</style>
