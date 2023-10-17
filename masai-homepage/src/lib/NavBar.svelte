@@ -24,9 +24,9 @@
   const dispatch = createEventDispatcher();
 </script>
 
-<div class="fixed w-full bg-white z-50  text-center">
+<div class="fixed w-full bg-white z-50  text-center ">
   <div class="w-full p-2 bg-[#fedfe5] flex justify-center items-center gap-3 font-medium text-[15.8px]">
-    <p>Applications for our 6th November Batches are now open! <span class="bg-[#ed0331] uppercase tracking-wider px-3 text-[15px] rounded-[11px] p-[3px] ml-2 sm:hidden block">APPLY NOW</span></p>
+    <p>Applications for our 6th November Batches are now open! <span class="bg-[#ed0331] uppercase text-white tracking-wider px-3 text-[15px] rounded-[11px] p-[3px] ml-2">APPLY NOW</span></p>
     <Button class="bg-[#ed0331] uppercase tracking-wider px-3 text-[15px] hidden md:block py-2">Apply Now</Button>
   </div>
   <Navbar class="w-full md:w-[80%] m-auto flex ">
