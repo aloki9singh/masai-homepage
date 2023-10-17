@@ -17,33 +17,27 @@
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch("http://localhost:5000/signup", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
+    fetch('http://kapil7982.pythonanywhere.com/signup', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
         full_name: formData.username,
         email: formData.email,
         phone: formData.phone
-      }),
+      })
     })
-      .then((response) => {
-        if (response.ok) {
-          return response.json();
-        } else {
-          return response.json().then((data) => {
-            throw new Error(data.error);
-          });
-        }
-      })
-      .then((data) => {
-        alert(data?.message)
-      })
-      .catch((error) => {
-       alert(error?.message)
-      });
-  };
+    .then(response => response.json())
+.then(data => {
+    if (data.error) {
+        alert(`Error ${data.status_code}: ${data.error}`);
+    } else {
+        alert(data.message);
+    }
+})
+.catch(error =>alert(`Erro:${error}`));
+}
 </script>
 
 <div>

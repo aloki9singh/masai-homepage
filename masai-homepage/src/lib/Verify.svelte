@@ -19,21 +19,33 @@
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    const existiedOtp = localStorage.getItem("otp");
-    const receivedOtp =
+    const otp_code =
       formData.otp1 +
       formData.otp2 +
       formData.otp3 +
       formData.otp4 +
       formData.otp5 +
       formData.otp6;
-    if (existiedOtp === receivedOtp) {
-      dispatch("LogInUser", JSON.parse(localStorage.getItem("user")));
-      dispatch("closeVerify");
-      alert("Login Successfully!");
-    } else {
-      alert("Invalid OTP!");
-    }
+    fetch("http://kapil7982.pythonanywhere.com/verify_otp", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        otp_code: otp_code,
+      }),
+    })
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.error) {
+          alert(data.error);
+        } else {
+          dispatch("LogInUser",{email:data.email});
+          dispatch("closeVerify");
+          alert("Login Successfully!");
+        }
+      })
+      .catch((error) => console.error("Error:", error));
   };
 </script>
 
