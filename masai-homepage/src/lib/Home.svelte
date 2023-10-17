@@ -4,12 +4,12 @@
   import TextCarousel from "./TextCarousel.svelte";
 </script>
 
-<div>
+<div class="md:w-[90%] m-auto mt-5">
   <div
     class="flex md:text-left text-center  justify-between items-center relative md:flex-row flex-col md:text-auto"
   >
     <div class="flex flex-col gap-5 w-full py-5">
-      <div class="md:text-5xl lg:text-4xl text-2xl  font-extrabold w-full text-center lg:flex lg:flex-col lg:text-left">
+      <div class="md:text-5xl  text-2xl  font-extrabold w-full text-center lg:flex lg:flex-col  lg:text-left">
         <span class="py-2 sm:inline">Realise Your Potential</span>
         <span>
           With
@@ -41,7 +41,7 @@
         >
       </div>
     </div>
-    <div class="md:w-5/12 w-full mx-auto md:p-4">
+    <div class="md:w-6/12 w-full mx-auto md:p-4 mt-5">
       <Carousel />
     </div>
     <div class="md:w-4/12 w-11/12 md:top-60  md:right-72 top-3/4 right-5 absolute h-[200px] ">

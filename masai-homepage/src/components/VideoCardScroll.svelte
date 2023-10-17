@@ -64,10 +64,10 @@ function changeVideo(direction) {
 
   </script>
 
-<div class="md:grid grid-cols-2">
-    <div class="max-w-4xl flex p-5">
+<div class="xl:grid grid-cols-2  items-center">
+    <div class="max-w-4xl flex p-5 ">
       <iframe
-        class="rounded-[15px] my-2"
+        class="rounded-[15px] my-2 w-full md:h-[400px]"
         width="560"
         height="315"
         src={videos[currentVideo]}
@@ -78,7 +78,8 @@ function changeVideo(direction) {
       ></iframe>
     </div>
     <div>
-        <div class="md:flex md:overflow-x-auto pt-5 gap-5 justify-center w-full">
+      <div>
+        <div class="flex overflow-x-scroll  ">
             {#each details as detail (detail.name) }
               <div class="card-detail p-2 w-full justify-center  flex ">
                 <CardDetail detail={detail} />
@@ -106,6 +107,8 @@ function changeVideo(direction) {
               </div>
             </div>
           </div>
+
+    </div>
     </div>
   </div>
   
@@ -114,8 +117,8 @@ function changeVideo(direction) {
   <style>
     /* Add this in your component's style section or a global stylesheet */
     .card-detail {
-      /* width: 375px; Set the desired width for each CardDetail */
-      white-space: nowrap; /* Prevent content from wrapping */
+      /* width: 375px;  */
+      /* white-space: nowrap; Prevent content from wrapping */
       margin-right: 20px; /* Add space between CardDetails */
     }
   </style>

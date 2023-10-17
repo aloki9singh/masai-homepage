@@ -1,4 +1,4 @@
-<div class="xl:w-[80%] m-auto">
+<div class="xl:w-[80%] m-auto pt-5">
     <div class="grid md:grid-cols-2 py-5 md:py-10">
         <div>
             

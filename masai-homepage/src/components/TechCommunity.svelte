@@ -42,10 +42,7 @@
         {/each}
        
     </div>
-     <div class="m-auto w-7/12 flex justify-center items-center p-5">
-    <!-- <Button class="bg-[#ed0331] uppercase tracking-wide p-3"
-      >View All Courses</Button> -->
-  </div>
+  
 </div>
 
 <style>
