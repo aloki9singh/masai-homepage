@@ -69,7 +69,7 @@
     transitionParams={transitionParamsRight}
     bind:hidden={hidden6}
     id="sidebar6"
-    class="w-1/3"
+    class="md:w-1/3 w-full "
   >
     <div class="flex items-center">
       <CloseButton
