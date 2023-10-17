@@ -51,7 +51,7 @@
           class="hover:bg-red-100 hover:text-red-500 pl-2 pr-2"
           on:click={() => {
             dispatch("openSignUp");
-          }}>Sign Up</Button
+          }}>SIGN UP</Button
         >
       {:else}
         <div class="flex justify-center items-center rounded-lg pr-2">
@@ -70,7 +70,7 @@
       {/if}
       <NavHamburger />
     </div>
-    <NavUl ulClass="text-sm font-medium flex uppercase gap-9">
+    <NavUl ulClass="text-sm font-medium flex uppercase gap-9 flex flex-col">
       <NavLi href="/" active={true}>Courses</NavLi>
       <NavLi href="/">Fees</NavLi>
       <NavLi href="/">Events</NavLi>
