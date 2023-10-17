@@ -51,7 +51,7 @@
 </div>
    <!-- <hr class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-4" /> -->
    <div class="flex flex-wrap">
-      <div class="flex flex-wrap gap-3 mb-4 p-2 w-[90%]">
+      <div class="flex flex-wrap gap-3 mb-4 p-2 w-[90%] xl:text-sm">
           <Button  class="text-black bg-white" pill>Full Stack Web Development - Full Time</Button>
           <Button  class="text-black bg-white" pill>Data Analytics - Full Time</Button>
           <Button  class="text-black bg-white" pill>Mobile Development - Full Time</Button> 
@@ -61,7 +61,7 @@
        </div>
        <div class="md:flex md:justify-between">
    
-          <div class="grid grid-cols-2 gap-5 sm:gap-6 sm:grid-cols-3 text-[18px] text-white ">
+          <div class="grid grid-cols-2 gap-5 sm:gap-6 sm:grid-cols-3 text-sm text-white ">
             <div>
               <!-- <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Resources</h2> -->
               <FooterLinkGroup ulClass="text-gray-300">
@@ -99,9 +99,9 @@
         
         </div>
       <!-- ---------------- -->
-      <div class="mb-6 md:mb-0 md:p-10 p-5 flex justify-center flex-row items-center  ">
+      <div class="mb-6 md:mb-0  p-5 flex justify-center flex-row items-center  ">
           <div class="">
-              <div class="mb-5 text-center text-lg text-gray-300">
+              <div class="mb-5 text-center text-sm text-gray-300">
   
                   Connect with a growing <br/>
                               community of learners

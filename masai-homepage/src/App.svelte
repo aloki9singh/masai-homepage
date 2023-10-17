@@ -4,14 +4,14 @@
   import SignUp from "./lib/SignUp.svelte";
   import SignIn from "./lib/SignIn.svelte";
   import NavBar from "./lib/NavBar.svelte";
-  import Banner from "./lib/Banner.svelte";
   import Courses from "./lib/Courses.svelte";
   import CareerTech from "./lib/CareerTech.svelte";
   import Verify from "./lib/Verify.svelte";
   import Pedagogy from "./lib/Pedagogy.svelte";
   import LowerMidSec from "./components/LowerMidSec.svelte";
   import Footer from "./components/Footer.svelte";
-  import Navbar from "./components/Navbar.svelte";
+  import Home from './lib/Home.svelte'
+  import Banner from './lib/Banner.svelte'
   // Library Import
 
   // State Management
@@ -52,12 +52,13 @@
 </script>
 
 <main>
-  <!-- <Navbar/> -->
+  
   <NavBar
     on:openSignUp={handleOpenSignUp}
     {user}
     on:LogOutUser={handleLogOut}
   />
+  <Banner/>
   <SignUp
     hidden6={drawerId.hiddenSignUp}
     on:openSignIn={handleOpenSignIn}
@@ -74,7 +75,7 @@
     on:closeVerify={handleCloseVerify}
     on:LogInUser={handleLogin}
   />
-  <Banner />
+  <Home/>
   <CareerTech />
   <Courses />
   <Pedagogy />

@@ -5,7 +5,8 @@
 </script>
 
 
-<h2 class="font-[700] py-5  text-[34px] leading-[40px] font-poppins transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 text-center mb-[24px] max-w-[1280px] mx-auto pt-10 my-5">
+<div class="xl:w-[80%] m-auto">
+  <h2 class="font-[700] py-5  text-[34px] leading-[40px] font-poppins transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 text-center mb-[24px] max-w-[1280px] mx-auto pt-10 my-5">
     Our Students Are
     <span class="!text-[#ED0331] relative whitespace-nowrap isolate">
         Creating Impact
@@ -14,4 +15,5 @@
 </h2>
 <div>
       <VideoCardScroll/>
+</div>
 </div>

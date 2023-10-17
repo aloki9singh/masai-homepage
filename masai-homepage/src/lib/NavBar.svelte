@@ -24,12 +24,12 @@
   const dispatch = createEventDispatcher();
 </script>
 
-<div class="fixed w-full bg-white z-50">
+<div class="fixed w-full bg-white z-50 ">
   <div class="w-full p-2 bg-[#fedfe5] flex justify-center items-center gap-3">
     <p>Applications for our 6th November Batches are now open!</p>
     <Button class="bg-[#ed0331] uppercase tracking-wider">Apply Now</Button>
   </div>
-  <Navbar class="w-full">
+  <Navbar class="xl:w-[80%] m-auto">
     <NavBrand href="/">
       <img
         src="https://masai-website-images.s3.ap-south-1.amazonaws.com/logo.png"

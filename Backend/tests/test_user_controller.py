@@ -14,7 +14,7 @@ class TestLoginAPI(unittest.TestCase):
     def test_successful_login_with_email(self):
         url = f"{self.base_url}/login"
         payload = {
-            "email": "shyam@gmail.com",  # Provide the email or phone number which exist in your database
+            "email": "rohit@gmail.com",  # Provide the email or phone number which exist in your database
             "phone": None,
         }
 
@@ -27,7 +27,7 @@ class TestLoginAPI(unittest.TestCase):
         url = f"{self.base_url}/login"
         payload = {
             "email": None,
-            "phone": "8690458967",  # Provide the phone number which exist in your database
+            "phone": "1234567892",  # Provide the phone number which exist in your database
         }
 
         response = requests.post(url, json=payload)
