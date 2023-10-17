@@ -44,7 +44,7 @@
     <div class="md:w-6/12 w-full mx-auto md:p-4 mt-5">
       <Carousel />
     </div>
-    <div class="md:w-4/12 w-11/12 md:top-60  md:right-72 top-3/4 right-5 absolute h-[200px] ">
+    <div class="md:w-4/12 w-10/12 md:top-72 md:right-64 top-3/4 right-9 absolute h-[200px] ">
       <TextCarousel />
     </div>
   </div>

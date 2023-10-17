@@ -7,7 +7,7 @@
 // https://www.masaischool.com/images/new-homepage/curriculum-style/graduate.svg
 
 </script>
-<p class="md:text-3xl text-2xl font-[700] text-center z-[-1]">
+<p class="md:text-3xl text-2xl font-[700] text-center z-[-1] hidden md:block">
     <span class="z-[-10]">Best-In-Class</span>
     <span class="text-[#ed0331] relative z-[-1]">
         Curriculum
@@ -27,8 +27,14 @@
         />
     </span>
 </p>
+<div class="w-11/12  md:hidden mx-auto p-3 bg-[#6e71cc] rounded-xl">
+    <div class="flex justify-center items-center p-3 rounded-full mr-auto bg-white w-1/4 mx-auto mb-5">
+        <img src="https://www.masaischool.com/images/new-homepage/curriculum-style/graduate.svg" alt="graduate-svg">
+    </div>
+    <p class="text-2xl font-extrabold text-white text-center" >Best In-Class Curriculum & Pedagogy</p>
+</div>
 <div class="w-full relative">
-    <div class="w-full h-[450px] mt-8 md:px-20 px-5 overflow-scroll">
+    <div class="w-full md:h-[450px] mt-8 md:px-20 px-5 md:overflow-scroll">
         <div class="md:w-5/12 w-full">
             <div class='w-full md:mb-52 mb-6 box-shadow p-3 rounded-md text-center md:text-left md:shadow-none'>
                 <img src="https://www.masaischool.com/images/new-homepage/curriculum-style/laptop.svg" alt="laptop-svg" class='mx-auto md:hidden'>

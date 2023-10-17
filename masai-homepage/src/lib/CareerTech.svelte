@@ -25,8 +25,7 @@
                     class="h-12 w-12 bg-red-200 flex justify-center items-center mr-3 text-gray-900 rounded-md text-md"
                     >1</span
                 >
-                <span
-                    >Career <span class="relative">
+                <span class="whitespace-nowrap">Career <span class="relative isolate">
                         Lunchpad
                         <img
                             alt="yellow-vector"
@@ -45,8 +44,7 @@
                     class="h-12 w-12 bg-gray-200 flex justify-center items-center mr-3 text-gray-900 rounded-md text-md"
                     >2</span
                 >
-                <span
-                    >Nuture <span class="relative">
+                <span class="whitespace-nowrap">Nuture <span class="relative">
                         Ambition
                         <img
                             alt="yellow-vector"
@@ -65,7 +63,7 @@
                     class="h-12 w-12 bg-gray-200 flex justify-center items-center mr-3 text-gray-900 rounded-md text-md"
                     >3</span
                 >
-                <span
+                <span class="whitespace-nowrap"
                     >Practice <span class="relative">
                         Based
                         <img
@@ -85,7 +83,7 @@
                     class="h-12 w-12 bg-gray-200 flex justify-center items-center mr-3 text-gray-900 rounded-md text-md"
                     >4</span
                 >
-                <span
+                <span class="whitespace-nowrap"
                     >Industry <span class="relative">
                         Readiness
                         <img
@@ -105,7 +103,7 @@
                     class="h-12 w-12 bg-gray-200 flex justify-center items-center mr-3 text-gray-900 rounded-md text-md"
                     >5</span
                 >
-                <span
+                <span class="whitespace-nowrap"
                     >Holistic <span class="relative">
                         Development
                         <img
