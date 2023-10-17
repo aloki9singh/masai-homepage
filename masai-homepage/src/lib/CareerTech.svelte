@@ -126,22 +126,22 @@
                 </div>
                 <div class="md:w-1/2 flex flex-col md:gap-4 gap-2">
                     <div class="w-full flex justify-center items-center bg-[#1a9fbd] p-4 rounded-2xl">
-                        <div class='text-lg md:text-2xl font-bold text-[#ffdb66] mr-2'>₹6.9 LPA</div>
-                        <div class="text-md text-white font-semibold uppercase flex md:flex-col gap-2 md:gap-0">
+                        <div class='text-lg md:text-3xl font-bold text-[#ffdb66] mr-2'>₹6.9 LPA</div>
+                        <div class="text-md text-white font-semibold uppercase flex md:flex-col gap-2 md:gap-0 md:text-center">
                             <p>Average</p>
                             <p>Ctc</p>
                         </div>
                     </div>
                     <div class="w-full flex justify-center items-center bg-[#1a9fbd] p-4 rounded-2xl">
                         <div class='text-lg md:text-3xl font-extrabold text-[#ffdb66] mr-2'>3500+</div>
-                        <div class=" text-md md:text-lg text-white font-semibold uppercase flex md:flex-col gap-2 md:gap-0">
+                        <div class=" text-md md:text-lg text-white font-semibold uppercase flex md:flex-col gap-2 md:gap-0 md:text-center">
                             <p>Career</p>
                             <p>Lunched</p>
                         </div>
                     </div>
                     <div class="w-full flex justify-center items-center bg-[#1a9fbd] p-4 rounded-2xl">
                         <div class=' text:lg md:text-3xl font-extrabold text-[#ffdb66] mr-2'>4000+</div>
-                        <div class=" text-md md:text-lg text-white font-semibold uppercase flex md:flex-col gap-2 md:gap-0">
+                        <div class=" text-md md:text-lg text-white font-semibold uppercase flex md:flex-col gap-2 md:gap-0 md:text-center">
                             <p>Hiring</p>
                             <p>Partners</p>
                         </div>
