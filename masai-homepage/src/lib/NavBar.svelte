@@ -70,7 +70,7 @@
       {/if}
       <NavHamburger />
     </div>
-    <NavUl ulClass="text-sm font-medium flex uppercase gap-9 flex flex-col">
+    <NavUl ulClass="text-sm font-medium flex uppercase gap-9 flex sm:flex-row flex-col">
       <NavLi href="/" active={true}>Courses</NavLi>
       <NavLi href="/">Fees</NavLi>
       <NavLi href="/">Events</NavLi>
