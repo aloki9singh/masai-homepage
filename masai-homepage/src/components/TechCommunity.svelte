@@ -51,7 +51,7 @@
 <style>
     .slider {
         overflow: hidden;
-        width:90%;
+        
         margin:auto;
         position: relative;
         min-height: auto;

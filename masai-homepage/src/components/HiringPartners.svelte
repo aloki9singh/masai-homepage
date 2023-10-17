@@ -69,7 +69,7 @@
         width: calc(100% * 30 );
         margin:auto;
         position: relative;
-        width:90%;
+        width:98%;
         height: auto;
         display: grid;
         place-items: center;

@@ -24,7 +24,7 @@
   const dispatch = createEventDispatcher();
 </script>
 
-<div class="fixed w-full bg-white z-50">
+<div class="fixed w-full bg-white z-50 ">
   <div class="w-full p-2 bg-[#fedfe5] flex justify-center items-center gap-3">
     <p>Applications for our 6th November Batches are now open!</p>
     <Button class="bg-[#ed0331] uppercase tracking-wider">Apply Now</Button>
@@ -54,7 +54,7 @@
           class="hover:bg-red-100 hover:text-red-200 pl-2 pr-2 border-none lg:border lg:border-solid lg:border-red-600"
           on:click={() => {
             dispatch("openSignUp");
-          }}>Sign Up</Button
+          }}>SIGN UP</Button
         >
       {:else}
         <div class="flex justify-center items-center rounded-lg pr-2">

@@ -45,7 +45,11 @@
             <div class='w-full md:mb-52 mb-6 shadow-xl p-3 rounded-md text-center md:text-left md:shadow-none'>
                 <h3 class="md:text-2xl text-lg font-[700] md:mb-8 mb-4 z-[-10]">Industry Ready In Just <span class="text-[#ed0331]">25 - 35 Weeks</span></h3>
                 <p class='md:text-md text-sm'>Curriculum At Masai Is Designed To Be Intensive & Extensive. With Our Unique Pedagogy Learn Right In Less Time. All We Ask Is Your Dedication!</p>
+
             </div>
+        </div>
+        <div>
+            <img src="https://www.masaischool.com/images/new-homepage/curriculum-style/course-image5.webp" class="h-[500px] w-5/12 absolute top-8 right-20 rounded-2xl z-[-2]" alt="pedagogy">
         </div>
     </div>
     <div class='hidden md:block'>
@@ -65,3 +69,4 @@
 // https://www.masaischool.com/images/new-homepage/curriculum-style/check.svg
 // https://www.masaischool.com/images/new-homepage/curriculum-style/certificate.svg
 // https://www.masaischool.com/images/new-homepage/curriculum-style/graduate.svg
+

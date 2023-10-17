@@ -19,10 +19,10 @@ export default {
         // primary: "#E1348B",
       },
       screens: {
-        // sd: "300px",
+        sm: "768px",
+        lg: "1024px",
+        xl: "1280px",
       },
-      
-      
     },
 
     fontFamily: {

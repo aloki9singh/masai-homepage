@@ -17,27 +17,27 @@
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch('http://kapil7982.pythonanywhere.com/signup', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
+    fetch("http://kapil7982.pythonanywhere.com/signup", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
         full_name: formData.username,
         email: formData.email,
-        phone: formData.phone
-      })
+        phone: formData.phone,
+      }),
     })
-    .then(response => response.json())
-.then(data => {
-    if (data.error) {
-        alert(`Error ${data.status_code}: ${data.error}`);
-    } else {
-        alert(data.message);
-    }
-})
-.catch(error =>alert(`Erro:${error}`));
-}
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.error) {
+          alert(`Error ${data.status_code}: ${data.error}`);
+        } else {
+          alert(data.message);
+        }
+      })
+      .catch((error) => alert(`Erro:${error}`));
+  };
 </script>
 
 <div>

@@ -52,6 +52,7 @@
 </script>
 
 <main>
+  
   <NavBar
     on:openSignUp={handleOpenSignUp}
     {user}
