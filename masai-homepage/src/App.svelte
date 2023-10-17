@@ -11,6 +11,7 @@
   import Pedagogy from "./lib/Pedagogy.svelte";
   import LowerMidSec from "./components/LowerMidSec.svelte";
   import Footer from "./components/Footer.svelte";
+  import Navbar from "./components/Navbar.svelte";
   // Library Import
 
   // State Management
@@ -51,6 +52,7 @@
 </script>
 
 <main>
+  <!-- <Navbar/> -->
   <NavBar
     on:openSignUp={handleOpenSignUp}
     {user}
