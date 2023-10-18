@@ -15,8 +15,8 @@ This project implements a web application for user registration and authenticati
 - Ensure you have Python and pip installed on your system.
 - Create a virtual environment:
   ```bash
-  python -m venv venv
-```
+   python -m venv venv
+  ```
 - Activate the virtual environment:
   ```bash
     venv\Scripts\activate
@@ -39,15 +39,15 @@ This project implements a web application for user registration and authenticati
   python app.py
   ```
 
-  ### Frontend Setup
-  - Install the Svelte in your system from the official documentation
-  - Start the Svelte development server:
+### Frontend Setup
+- Install the Svelte in your system from the official documentation
+- Start the Svelte development server:
       ```bash
        npm install
        npm run dev
       ```
- ## Usage
- - Follow the on-screen instructions for user registration and authentication.
+## Usage
+- Follow the on-screen instructions for user registration and authentication.
 
 ## Acknowledgments
 Special thanks to the entire team for their hard work and dedication to the project.
