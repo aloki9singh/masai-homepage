@@ -3,8 +3,8 @@ This is a collaborative project involving four members, aimed at creating a web 
 
 ## Links
 Use can access the fronted and backend through the below links:-
-[Fronted](https://masai-homepage-ashen.vercel.app/)
-[Backend](https://kapil7982.pythonanywhere.com/)
+- [Fronted](https://masai-homepage-ashen.vercel.app/)
+- [Backend](https://kapil7982.pythonanywhere.com/)
 
 ## Team Members
 - Kapil:- Backend
