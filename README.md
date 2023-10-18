@@ -18,20 +18,20 @@ This project implements a web application for user registration and authenticati
   python -m venv venv
 ```
 - Activate the virtual environment:
-```bash
-  venv\Scripts\activate
-```
+  ```bash
+    venv\Scripts\activate
+  ```
 - Install required Python packages:
   ```bash
-  pip install Flask Flask-Cors Flask-MySQLdb
-```
+    pip install Flask Flask-Cors Flask-MySQLdb
+  ```
 - Set up MySQL database:
 - Create a database named flask_app.
 - Configure MySQL connection details in app.py.
 - Install Twilio Python library:
-```bash
-pip install twilio
-```
+   ```bash
+     pip install twilio
+   ```
 - Set up a Twilio account and obtain account_sid, auth_token, and twilio_phone_number.
 
 - Run the Flask application:
