@@ -32,9 +32,10 @@
 
 
 <div class="slider">
-    <div class="slide-track " style="transform: translate3d(-3346.36px, 0px, 0px); transition-duration: 0ms;">
+   
+    <div class="slide-track mt-10 " style="transform: translate3d(-3346.36px, 0px, 0px); transition-duration: 0ms;">
         {#each images as image (image)}
-        <div class=" slide w-full !h-auto  " style="width:361.818px; margin-right:10px;">
+        <div class=" slide w-full h-[300px]  " style="width:361.818px; margin-right:10px;">
           
        <img alt="community" class="object-cover pointer-events-none " style="opacity: 1; transition: opacity 1200ms ease-out 0s;" src={image}>
            
@@ -42,8 +43,32 @@
         {/each}
        
     </div>
-  
 </div>
+<div class="md:flex items-center justify-center relative pt-[20px] max-w-[1440px] mx-auto mb-20">
+    
+    <div class="flex mb-[20px] md:mb-0 px-[16px] md:px-0 justify-end items-center gap-[8px] md:absolute right-[80px] z-[3]">
+      <button type="button" w="32px" h="32px" as="button" colorscheme="red" minw="32px !important" class="rounded-[0.375rem]  hover:bg-[#FEDFE5] border-[1px] border-[currentColor]  justify-center items-center !font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase p-[12px_16px] inline-block focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 w-[32px] text-[#ED0331] h-[32px] min-w-[32px] !p-0 curved-swiper-button-prev1">
+        <div>
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15.41 16.58L10.83 12L15.41 7.41L14 6L7.99997 12L14 18L15.41 16.58Z" fill="currentColor"></path>
+          </svg>
+        </div>
+      </button>
+      <button type="button" class=" rounded-[0.375rem]  hover:bg-[#FEDFE5] border-[1px] border-[currentColor] justify-center items-center !font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercaseinline-block focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200 w-[32px] text-[#ED0331] h-[32px] min-w-[32px] !p-0 curved-swiper-button-next1">
+        <div>
+          <svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.59003 16.58L13.17 12L8.59003 7.41L10 6L16 12L10 18L8.59003 16.58Z" fill="currentColor"></path>
+          </svg>
+        </div>
+      </button>
+    </div>
+    <div class="text-center relative z-[2] flex-1">
+      <a href="/" disabled="false" target="_blank" class="active:!ring-0 p-3 bg-[#ED0331] hover:bg-red-600 rounded-[8px] text-white !font-[600] text-[14px] leading-[24px] font-sans tracking-[1.25px] uppercase  inline-block focus:!ring-0 outline-offset-[5px] outline-[1px] outline-[transparent] focus-visible:!shadow-[0_0_0_3px_rgba(66,_153,_225,_0.6)] disabled:opacity-[0.6] disabled:cursor-not-allowed transition-[background-color,border-color,color,fill,stroke,opacity,box-shadow,transform] duration-200">
+        Join our community
+      </a>
+    </div>
+  </div>
+  
 
 <style>
     .slider {
