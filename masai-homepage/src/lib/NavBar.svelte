@@ -26,10 +26,10 @@
 
 <div class="fixed w-full bg-white z-50  text-center ">
   <div class="w-full p-2 bg-[#fedfe5] flex justify-center items-center gap-3 font-medium text-[15.8px]">
-    <p>Applications for our 6th November Batches are now open! <span class="bg-[#ed0331] uppercase text-white tracking-wider px-3 text-[15px] rounded-[11px] p-[3px] ml-2">APPLY NOW</span></p>
+    <p>Applications for our 6th November Batches are now open! <span class="bg-[#ed0331] uppercase text-white tracking-wider px-3 text-[15px] rounded-[11px] p-[3px] ml-2 md:hidden">APPLY NOW</span></p>
     <Button class="bg-[#ed0331] uppercase tracking-wider px-3 text-[15px] hidden md:block py-2">Apply Now</Button>
   </div>
-  <Navbar class="w-full md:w-[80%] m-auto flex ">
+  <Navbar class="w-full md:w-[85%] m-auto flex ">
     <div class="flex justify-between items-center md:gap-2">
       <NavHamburger class='p-0'/>
       <NavBrand href="/">
@@ -44,7 +44,7 @@
     <div class="flex gap-3 md:order-2">
       <Button
         size="lg"
-        class="uppercase pl-1 pr-1 px-2 bg-[#e5feff]  text-[#6E71CC] hover:bg-[#8bd3d5] md:block hidden"
+        class="uppercase pl-1 pr-1 px-2 bg-[#e5feff]  text-[#6E71CC] hover:bg-[#8bd3d5] md:block"
         >Refer & Earn</Button
       >
       {#if !user}
