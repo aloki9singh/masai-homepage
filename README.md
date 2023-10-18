@@ -1,5 +1,11 @@
 # masai-homepage
 This is a collaborative project involving four members, aimed at creating a web application with a backend in Flask and a frontend using Svelte.
+
+## Links
+Use can access the fronted and backend through the below links:-
+[Fronted](https://masai-homepage-ashen.vercel.app/)
+[Backend](https://kapil7982.pythonanywhere.com/)
+
 ## Team Members
 - Kapil:- Backend
 - Alok:- Fronted
