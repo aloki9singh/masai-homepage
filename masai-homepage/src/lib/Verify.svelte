@@ -1,4 +1,5 @@
 <script>
+  import { onMount } from "svelte";
   import { Button, CloseButton, Drawer, Input, Label } from "flowbite-svelte";
   import { createEventDispatcher } from "svelte";
   import { sineIn } from "svelte/easing";
@@ -17,15 +18,34 @@
     otp5: "",
     otp6: "",
   };
+  let currentFocus = 1;
+
+  onMount(() => {
+    focusOnInput(currentFocus);
+  });
+
+  const handleInput = (event, inputIndex) => {
+    formData[`otp${inputIndex}`] = event.target.value;
+
+    if (event.target.value && inputIndex < 6) {
+      focusOnInput(inputIndex + 1);
+    }
+
+    if (!event.target.value && inputIndex > 1) {
+      focusOnInput(inputIndex - 1);
+    }
+  };
+
+  const focusOnInput = (index) => {
+    currentFocus = index;
+    const input = document.getElementById(`otp-${index}`);
+    input.focus();
+  };
+
   const handleSubmit = (event) => {
     event.preventDefault();
-    const otp_code =
-      formData.otp1 +
-      formData.otp2 +
-      formData.otp3 +
-      formData.otp4 +
-      formData.otp5 +
-      formData.otp6;
+    const otp_code = Object.values(formData).join("");
+
     fetch("https://kapil7982.pythonanywhere.com/verify_otp", {
       method: "POST",
       headers: {
@@ -40,7 +60,7 @@
         if (data.error) {
           alert(data.error);
         } else {
-          dispatch("LogInUser",{email:data.email});
+          dispatch("LogInUser", { email: data.email });
           dispatch("closeVerify");
           alert("Login Successfully!");
         }
@@ -72,60 +92,25 @@
       </p>
       <form on:submit={handleSubmit}>
         <div class="mb-4 flex justify-between">
-          <Input
-            type="text"
-            name="otp-1"
-            bind:value={formData.otp1}
-            class="border border-gray-300 rounded-lg text-md h-14 py-2 px-2 w-14 text-center mr-1 focus:outline-none focus:border-blue-500"
-            maxlength="1"
-            required
-          />
-          <Input
-            type="text"
-            name="otp-2"
-            bind:value={formData.otp2}
-            class="border border-gray-300 rounded-lg text-md h-14 py-2 px-2 w-14 text-center mr-1 focus:outline-none focus:border-blue-500"
-            maxlength="1"
-            required
-          />
-          <Input
-            type="text"
-            name="otp-3"
-            bind:value={formData.otp3}
-            class="border border-gray-300 rounded-lg text-md h-14 py-2 px-2 w-14 text-center mr-1 focus:outline-none focus-border-blue-500"
-            maxlength="1"
-            required
-          />
-          <Input
-            type="text"
-            name="otp-4"
-            bind:value={formData.otp4}
-            class="border border-gray-300 rounded-lg text-md h-14 py-2 px-2 w-14 text-center mr-1 focus:outline-none focus:border-blue-500"
-            maxlength="1"
-            required
-          />
-          <Input
-            type="text"
-            name="otp-5"
-            bind:value={formData.otp5}
-            class="border border-gray-300 rounded-lg text-md h-14 py-2 px-2 w-14 text-center mr-1 focus:outline-none focus-border-blue-500"
-            maxlength="1"
-            required
-          />
-          <Input
-            type="text"
-            name="otp-6"
-            bind:value={formData.otp6}
-            class="border border-gray-300 rounded-lg text-md h-14 py-2 px-2 w-14 text-center mr-1 focus:outline-none focus:border-blue-500"
-            maxlength="1"
-            required
-          />
+          {#each Array.from({ length: 6 }) as _, i}
+            <Input
+              type="text"
+              name="otp-{i + 1}"
+              bind:value={formData[`otp${i + 1}`]}
+              class="border border-gray-300 rounded-lg text-md h-14 py-2 px-2 w-14 text-center mr-1 focus:outline-none focus:border-blue-500"
+              maxlength="1"
+              id={`otp-${i + 1}`}
+              on:input={(event) => handleInput(event, i + 1)}
+              required
+            />
+          {/each}
         </div>
         <Button
           type="submit"
           class="bg-blue-500 hover:bg-blue-600 text-white rounded-md py-2 px-4 w-full text-center font-semibold mt-4 uppercase"
-          >Verify</Button
         >
+          Verify
+        </Button>
       </form>
     </div>
   </Drawer>
