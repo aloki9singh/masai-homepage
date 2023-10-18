@@ -20,6 +20,7 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
-    "flowbite-svelte-icons": "^0.4.4"
+    "flowbite-svelte-icons": "^0.4.4",
+    "netlify-cli": "^16.8.0"
   }
 }
