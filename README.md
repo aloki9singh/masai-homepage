@@ -42,10 +42,12 @@ This project implements a web application for user registration and authenticati
 ### Frontend Setup
 - Install the Svelte in your system from the official documentation
 - Start the Svelte development server:
-      ```bash
-       npm install
-       npm run dev
-      ```
+  ```bash
+  npm install
+  ```
+  ```bash
+  npm run dev
+  ```
 ## Usage
 - Follow the on-screen instructions for user registration and authentication.
 
