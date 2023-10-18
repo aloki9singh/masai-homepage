@@ -17,7 +17,7 @@
   };
   const handleSubmit = (event) => {
     event.preventDefault();
-    fetch("http://kapil7982.pythonanywhere.com/signup", {
+    fetch("https://kapil7982.pythonanywhere.com/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

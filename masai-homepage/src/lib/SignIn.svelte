@@ -35,7 +35,7 @@
      return alert("Enter valid email or phone")
     }
 
-    fetch("http://kapil7982.pythonanywhere.com/login", {
+    fetch("https://kapil7982.pythonanywhere.com/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

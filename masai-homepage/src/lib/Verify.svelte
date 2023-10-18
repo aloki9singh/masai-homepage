@@ -26,7 +26,7 @@
       formData.otp4 +
       formData.otp5 +
       formData.otp6;
-    fetch("http://kapil7982.pythonanywhere.com/verify_otp", {
+    fetch("https://kapil7982.pythonanywhere.com/verify_otp", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
