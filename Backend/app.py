@@ -6,9 +6,9 @@ import re
 from twilio.rest import Client
 from datetime import datetime, timedelta
 
-account_sid = "ACad34c751981b1389c2d38525ed2dc637"
-auth_token = "cac2c0a82bcb02d0e9762ca5bbd7d8cf"
-twilio_phone_number = "+1234567890"
+account_sid = "YOUR_ACCOUNT_SID"
+auth_token = "YOUR_AUTH_TOKEN"
+twilio_phone_number = "YOUR_TWILIO_PHONE_NUMBER"
 client = Client(account_sid, auth_token)
 
 otp_storage = {}
